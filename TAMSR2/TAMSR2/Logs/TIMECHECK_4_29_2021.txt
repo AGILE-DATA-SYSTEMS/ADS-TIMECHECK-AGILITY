@@ -1,0 +1,18 @@
+4_29_2021 12:03 AM :Device ID:19
+4_29_2021 12:03 AM :baseURL:http://localhost:81/
+4_29_2021 12:03 AM :api/Auth/tokenformovement ->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Wed, 28 Apr 2021 20:03:55 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]},{"Key":"Content-Length","Value":["46"]}]},"Method":{"Method":"POST"},"RequestUri":"http://localhost:81/api/Auth/tokenformovement","Headers":[{"Key":"Accept","Value":["application/json"]}],"Properties":{}},"IsSuccessStatusCode":true}
+4_29_2021 12:03 AM :accessToken:MjAyMTA0MjgyMDAzNTVfc3lzYWRtaW5fMTIzNDU2Nzg=
+4_29_2021 12:03 AM :SendRequest:api/Device/GetDeviceById/->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Wed, 28 Apr 2021 20:03:55 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":null,"Method":{"Method":"GET"},"RequestUri":"http://localhost:81/api/Device/GetDeviceById/19","Headers":[{"Key":"Accept","Value":["application/json"]},{"Key":"Authorization","Value":["MjAyMTA0MjgyMDAzNTVfc3lzYWRtaW5fMTIzNDU2Nzg="]}],"Properties":{}},"IsSuccessStatusCode":true}
+4_29_2021 12:03 AM :Enrollment: Starting User Sync
+4_29_2021 2:45 AM :Device ID:19
+4_29_2021 2:45 AM :baseURL:http://localhost:81/
+4_29_2021 2:45 AM :SendRequest:api/Device/GetDeviceById/->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Wed, 28 Apr 2021 22:45:31 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":null,"Method":{"Method":"GET"},"RequestUri":"http://localhost:81/api/Device/GetDeviceById/19","Headers":[{"Key":"Accept","Value":["application/json"]},{"Key":"Authorization","Value":["MjAyMTA0MjgyMDAzNTVfc3lzYWRtaW5fMTIzNDU2Nzg="]}],"Properties":{}},"IsSuccessStatusCode":true}
+4_29_2021 2:45 AM :Enrollment: Starting User Sync
+4_29_2021 5:25 PM :baseURL:http://localhost:81/
+4_29_2021 5:26 PM :baseURL:http://localhost:81/
+4_29_2021 5:26 PM :baseURL:http://localhost:81/
+4_29_2021 5:32 PM :baseURL:http://localhost:44325/
+4_29_2021 5:33 PM :baseURL:http://localhost:44325/
+4_29_2021 5:35 PM :baseURL:http://localhost:44325/
+4_29_2021 5:36 PM :baseURL:http://localhost:44325/
+4_29_2021 5:39 PM :api/Auth/tokenformovement ->null

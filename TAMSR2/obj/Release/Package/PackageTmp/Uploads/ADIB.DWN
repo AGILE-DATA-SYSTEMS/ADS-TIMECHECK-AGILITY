@@ -1,0 +1,240 @@
+;*************************************
+; CMI SaveTime 2000 Download script
+; Customer	- Abu Dhabi Islamic Bank 
+; Author	- Mohammed Sayeed
+; Date		- 29/10/2006 // PROXIMITY Data Filter + Finger Print
+; EMPLOYEES     - 1550
+; SPL EMPLOYEES - 100
+; CARD LENGTH   - 6 
+; Proximity Cards  - 34 Bit
+; F1		- NORMAL IN 
+; F2		- NORMAL OUT
+; F3		- PERMISSION IN
+; F4		- PERMISSIION OUT
+; F6		- SuperVisor
+; shift + F1	- SPECIAL NORMAL IN 
+; shift + F2	- SPECIAL NORMAL OUT
+; shift + F3	- SPECIAL PERMISSION IN
+; shift + F4	- SPECIAL PERMISSIION OUT
+;*************************************
+"L"
+"D00Loading FTE TMAT."
+"0E"
+"9E"
+"8E"
+"7E"
+"6E"
+"5E"
+"4E"
+"3E"
+"2E"
+"1E"
+*************************************
+Memory allocation
+*************************************
+"7B020" 	    ** 10 User Messsages
+"9B010050020090000" ** Scroll Menu Items file
+"9B020050004000000" ** Supervisor Pin Code validation file
+"9B040060006000000" ** Special employee validation file
+"9B321395006000000" ** Employee Pin Code validation file
+*************************************
+Control File setup
+*************************************
+"6C01203020300201030"
+"6C0223011"
+"6C031"
+"6C0600110"
+"6C09L5340000A0321A0321A0321"
+"6C100 "
+"6C12UD"
+"6C1463300000000"
+"6C181"
+*************************************
+Prompt and activity loading
+*************************************
+"8C030ADIB  00CA030 C   "
+------------------------------------
+"8C000NORMAL IN   06"D033 C32 "
+"1C000027"
+"2C027DF021$1433"
+"8C033Touch sensor......    001 034     "
+"1C033001"
+"2C001AX0102V0 103"
+"8C034Touch sensor......    06CI035     "
+"8C035Processing...         06#I036     "
+"1C035002"
+"2C002DO01A0200"
+"8C036                      00B 000 Z   "
+"1C036003"
+"2C003DM033101   "
+"7C101***  CLOCKED IN! ***02"
+------------------------------------
+"8C001NORMAL OUT  06"D037 C32 "
+"1C001027"
+"8C037Touch sensor......    001 038     "
+"1C037001"
+"8C038Touch sensor......    06CI039     "
+"8C039Processing...         06#I040     "
+"1C039002"
+"8C040                      00B 001 Z   "
+"1C040004"
+"2C004DM033102   "
+"7C102*** CLOCKED OUT! ***02"
+------------------------------------
+"8C002PERMISSION IN    06"D033 C32 "
+"1C002027"
+------------------------------------
+"8C003PERMISSION OUT        06"D037 C32 "
+"1C003027"
+----------------------------------------
+"8C006SPL NORMAL IN        06"D036 C04 "
+"1C006027"
+----------------------------------------
+"8C007SPL NORMAL OUT        06"D040 C04 "
+"1C007027"
+----------------------------------------
+"8C008SPL PERMISSION IN        06"D036 C04 "
+"1C008027"
+----------------------------------------
+"8C009SPL PERMISSION OUT        06"D040 C04 "
+"1C009027"
+*************************************
+Supervisor functions...
+*************************************
+"8C005Enter Supervisor PIN0427060 H02 "
+"8C060Scroll Menu Options.201 061 F01 "
+"1C060009"
+"2C009SD010199"
+"4C0600000000070079075080085090105110115"
+------------------------------------
+normal enroll branch
+------------------------------------
+"8C070Enter ID to Enroll..06"9071 C32 "
+"1C070010"
+"2C010AX0102E0 3 1 0 0 0 03"	
+"8C071Touch sensor........00CI072     "
+"8C072Remove your finger..06"I073     "
+"8C073Send the transaction06C 074 P   "
+"8C074Processing Template 06"I070     "
+"1C074011"
+"2C011DM032105   "
+"7C105***   ENROLLED   ***02"
+------------------------------------
+windowed enroll branch
+------------------------------------
+"8C079Enter ID, Bin Enroll06"9071 C32 "
+"1C079026"
+"2C026AX0102E0 3 1 1 1 0 03"	
+------------------------------------
+delete a user branch
+------------------------------------
+"8C075Enter ID to Delete.06"9076 C32 "
+"8C076Delete in process... 00B 077     "
+"1C076012"
+"2C012AX0102D0 3 *03" ** no template back
+"8C077Delete in process...06"I078     "
+"8C078                    00B 030 Z   "
+"1C078013"
+"2C013DM032106   "
+"7C106* TEMPLATE DELETED *02"
+------------------------------------
+delete all template branch.
+------------------------------------
+"8C080                    00C 081 C   "
+"1C080014"
+"2C014AX0102D103"	
+"8C081Delete in process....00CI082 C   "
+"8C082                    00B 030 Z   "
+"1C082015"
+"2C015DM012107"
+"7C107*TEMPLATES DELETED!*02"
+------------------------------------
+;Query a finger template branch
+;------------------------------------
+
+"8C085Enter ID to Query...06"9086 Y32 "
+"1C085016"
+"2C016AX0102Q0 303" ** no template back
+"8C086Query in process....01SI088 Y   "
+;Valid ID comes here
+"8C088Query in process....00C 085 Y   "
+"1C088017"
+"2C017DM013108"
+"7C108Template is Loaded02"
+;Override system message for templte not loaded
+"7C044Template not found02"
+------------------------------------
+Query the number of templates
+------------------------------------
+"8C090                    00C 091 D   "
+"1C090018"
+"2C018AX0102Q103"	
+"8C091Query in process....08CI092 Y   "
+"8C092Query in process.... 08C*093 Y   "
+"1C092021"
+"2C021DF011#0104"
+"8C093Query in process.... 01S*094 Y   "
+"1C093022"
+"2C022DF018+0101Template  "
+"8C094Query in process.... 01S*095 c   "
+"1C094023"
+"2C023DF018+0909 Count=   "
+"8C095Query in process.... 08C*096 c   "
+"8C096FLUSH IT             08C 030 D   "
+------------------------------------
+Set security level
+------------------------------------
+"8C105Security level?  0-501"9106 C   "
+"8C106                    00B 107     "
+"1C106019"
+"2C019AX0102C0 303" ** no template back
+"8C107Updating BioScanII..00"I092     "
+------------------------------------
+Set Quality and content levels
+------------------------------------
+"8C110Quality level? 01-9902"9111 C   "
+"8C111Content level? 01-9902"9112 C   "
+"8C112                    00B 107     "
+"1C112020"
+"2C020AX0102C1 3 403"
+------------------------------------
+Get firmware version from BioScanII
+------------------------------------
+"8C115                    00B 107     "
+"1C115025"
+"2C025AX0102S003"
+*************************************
+Validation Records
+*************************************
+load supervisor pin
+------------------------------------
+"9C021234"
+------------------------------------
+load supervisor option menu val. file.
+------------------------------------
+"9C01.......Normal Enroll"
+"9C01....Difficult Enroll"
+"9C01.......Delete a user"
+"9C01....Delete all users"
+"9C01........Query a user"
+"9C01....Query # of users"
+"9C01..Set Security Level"
+"9C01..Set Qual & Content"
+"9C01.Biometric Firmware?"
+*************************************
+set to buffered mode
+*************************************
+"6C0720001000000"
+*************************************
+Set number of templates
+*************************************
+"FC5 2"
+*************************************
+get status of download file
+*************************************
+"S05"
+*************************************
+Go to prompt 030, idle prompt
+*************************************
+"O030"
+*************************************

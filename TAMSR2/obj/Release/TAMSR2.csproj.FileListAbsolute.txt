@@ -1,0 +1,481 @@
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\ReportEngine.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\RptRoster.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\RptSchCode.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\RptViewRoster.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\StdReportEngine.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Std_5_ReportEngine.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Summary_Report.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Std_6_ReportEngine.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report_En.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report_En.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\MontlyRosterRpt.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Arb.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Eng.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Eng.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Eng.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Arb.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Arb.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Arb.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Eng.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Arb.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Eng.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeDetail_Report_Arb.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Eng.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Arb.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Medical_Pass_Report_Eng.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Evac_Report_Eng.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Arb.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Eng.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Arb.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Eng.rpt
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report_En.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Summary_Report.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report_En.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Medical_Pass_Report_Eng.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Arb.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Eng.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Arb.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Arb.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Eng.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Arb.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Eng.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Arb.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Eng.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeDetail_Report_Arb.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Evac_Report_Eng.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Arb.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Eng.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Eng.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Arb.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Eng.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\MontlyRosterRpt.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Arb.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Eng.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\Std_5_ReportEngine.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\StdReportEngine.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\RptViewRoster.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\ReportEngine.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\RptRoster.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalReports\RptSchCode.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\TAMSR2.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\TAMSR2.pdb
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalDecisions.Shared.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\CrystalDecisions.Web.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Elmah.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Excel.4.5.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\ICSharpCode.SharpZipLib.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Microsoft.Web.Infrastructure.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Newtonsoft.Json.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Owin.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\TAMSR2Framework.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\TAMSR2Framework.pdb
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Newtonsoft.Json.xml
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\obj\Release\TAMSR2.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\obj\Release\TAMSR2.pdb
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx.designer.cs
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2\TAMSR2\obj\Release\TAMSR2.csprojResolveAssemblyReference.cache
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\ReportEngine.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptRoster.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptSchCode.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptViewRoster.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\StdReportEngine.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Std_5_ReportEngine.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Summary_Report.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Std_6_ReportEngine.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report_En.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report_En.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\MontlyRosterRpt.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Arb.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Eng.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Eng.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Eng.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Arb.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Arb.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Arb.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Eng.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Arb.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Eng.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeDetail_Report_Arb.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Eng.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Arb.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Medical_Pass_Report_Eng.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Evac_Report_Eng.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Arb.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Eng.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Arb.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Eng.rpt
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report_En.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Summary_Report.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report_En.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Medical_Pass_Report_Eng.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Arb.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Eng.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Arb.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Arb.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Eng.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Arb.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Eng.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Arb.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Eng.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeDetail_Report_Arb.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Evac_Report_Eng.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Arb.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Eng.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Eng.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Arb.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Eng.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\MontlyRosterRpt.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Arb.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Eng.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Std_5_ReportEngine.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\StdReportEngine.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptViewRoster.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\ReportEngine.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptRoster.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptSchCode.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx.designer.cs
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2.dll.config
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2.pdb
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.CrystalReports.Design.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.Shared.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.Web.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Elmah.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Excel.4.5.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\ICSharpCode.SharpZipLib.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.ConnectionInfo.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.Smo.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.Web.Infrastructure.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Newtonsoft.Json.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Owin.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2Framework.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\stdole.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2Framework.pdb
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Newtonsoft.Json.xml
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.csprojAssemblyReference.cache
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.csproj.CoreCompileInputs.cache
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.csproj.CopyComplete
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.pdb
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\ReportEngine.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptRoster.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptSchCode.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptViewRoster.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\StdReportEngine.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Std_5_ReportEngine.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Summary_Report.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Std_6_ReportEngine.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report_En.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report_En.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\MontlyRosterRpt.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Arb.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Eng.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Eng.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Eng.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Arb.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Arb.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Arb.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Eng.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Arb.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Eng.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeDetail_Report_Arb.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Eng.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Arb.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Medical_Pass_Report_Eng.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Evac_Report_Eng.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Arb.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Eng.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Arb.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Eng.rpt
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report_En.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Summary_Report.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report_En.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Medical_Pass_Report_Eng.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Arb.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Eng.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Arb.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Arb.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Eng.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Arb.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Eng.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Arb.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Eng.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeDetail_Report_Arb.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Evac_Report_Eng.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Arb.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Eng.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Eng.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Arb.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Eng.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\MontlyRosterRpt.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Arb.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Eng.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Std_5_ReportEngine.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\StdReportEngine.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptViewRoster.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\ReportEngine.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptRoster.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptSchCode.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx.designer.cs
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2.pdb
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.Shared.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.Web.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Elmah.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Excel.4.5.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\ICSharpCode.SharpZipLib.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.Web.Infrastructure.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Newtonsoft.Json.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Owin.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2Framework.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2Framework.pdb
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Newtonsoft.Json.xml
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.csprojResolveAssemblyReference.cache
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.pdb
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\ReportEngine.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptRoster.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptSchCode.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptViewRoster.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\StdReportEngine.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Std_5_ReportEngine.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Summary_Report.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Std_6_ReportEngine.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report_En.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report_En.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\MontlyRosterRpt.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Arb.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Eng.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Eng.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Eng.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Arb.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Arb.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Arb.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Eng.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Arb.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Eng.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeDetail_Report_Arb.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Eng.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Arb.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Medical_Pass_Report_Eng.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Evac_Report_Eng.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Arb.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Eng.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Arb.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Eng.rpt
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report_En.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Summary_Report.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report_En.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Medical_Pass_Report_Eng.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Arb.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Eng.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Arb.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Arb.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Eng.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Arb.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Eng.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Arb.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Eng.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeDetail_Report_Arb.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Evac_Report_Eng.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Arb.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Eng.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Eng.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Arb.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Eng.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\MontlyRosterRpt.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Arb.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Eng.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\Std_5_ReportEngine.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\StdReportEngine.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptViewRoster.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\ReportEngine.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptRoster.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalReports\RptSchCode.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx.designer.cs
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2.dll.config
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2.pdb
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.CrystalReports.Design.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.CrystalReports.Engine.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.Shared.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\CrystalDecisions.Web.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Elmah.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Excel.4.5.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\ICSharpCode.SharpZipLib.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Core.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Owin.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.ConnectionInfo.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.Smo.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.Web.Infrastructure.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Newtonsoft.Json.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Owin.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2Framework.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.SqlEnum.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.Dmf.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.ServiceBrokerEnum.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\stdole.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\TAMSR2Framework.pdb
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Core.xml
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Owin.xml
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\bin\Newtonsoft.Json.xml
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.csprojAssemblyReference.cache
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.csproj.CopyComplete
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\obj\Release\TAMSR2.pdb
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\ReportEngine.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\RptRoster.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\RptSchCode.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\RptViewRoster.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\StdReportEngine.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Std_5_ReportEngine.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Summary_Report.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Std_6_ReportEngine.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report_En.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report_En.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\MontlyRosterRpt.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Arb.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Eng.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Eng.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Eng.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Arb.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Arb.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Arb.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Eng.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Arb.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Eng.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeDetail_Report_Arb.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Eng.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Arb.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Medical_Pass_Report_Eng.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Evac_Report_Eng.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Arb.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Eng.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Arb.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Eng.rpt
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report_En.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Summary_Report.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_Movement_Report_En.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Arabic_DMR_Report.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Medical_Pass_Report_Eng.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Arb.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Deduction_Report_Eng.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Arb.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Arb.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeYearSummaryReport_Eng.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Arb.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\DetailedDailyMovementReport_Eng.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Arb.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Eight_Column_Report_Eng.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\EmployeeDetail_Report_Arb.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Employee_Evac_Report_Eng.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Arb.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Five_Column_Report_Eng.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\PermissionReport_Eng.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Arb.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\DailyMovementReport_Eng.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\MontlyRosterRpt.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Arb.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Nine_Column_Report_Eng.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\Std_5_ReportEngine.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\StdReportEngine.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\RptViewRoster.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\ReportEngine.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\RptRoster.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalReports\RptSchCode.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Reports\ViewSAPHCM.aspx.designer.cs
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\TAMSR2.dll.config
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\TAMSR2.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\TAMSR2.pdb
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalDecisions.CrystalReports.Design.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalDecisions.Shared.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\CrystalDecisions.Web.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Elmah.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Excel.4.5.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\ICSharpCode.SharpZipLib.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.ConnectionInfo.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.SqlServer.Smo.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.Web.Infrastructure.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Newtonsoft.Json.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Owin.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\TAMSR2Framework.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\stdole.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\TAMSR2Framework.pdb
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\bin\Newtonsoft.Json.xml
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\obj\Release\TAMSR2.csprojAssemblyReference.cache
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\obj\Release\TAMSR2.csproj.CoreCompileInputs.cache
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\obj\Release\TAMSR2.csproj.CopyComplete
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\obj\Release\TAMSR2.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\obj\Release\TAMSR2.pdb

@@ -1,0 +1,154 @@
+@charset "iso-8859-1";
+
+/* overwrite */
+
+#NI-frame-work01 {
+background: url(/EN/SHARED/IMAGES/COMMON02/top_bg07_alternative.png) 0 0 no-repeat;
+min-height: 521px; 
+padding-top: 3px;
+}
+* html #NI-frame-work01 { height: 521px; }
+
+#NI-contents-block {
+float: none;
+width: 974px;
+}
+
+.NI-contents-block01 {
+width: 934px;
+margin-left: 15px;
+margin-top: 0;
+_margin-top: 0;
+}
+
+.NI-contents-block02 {
+margin: 3px 0 8px 25px;
+}
+
+.NI-column01 {
+width: 924px;
+position: relative;
+}
+
+/* Regional Map */
+
+#NI-main-visual_map {
+position: relative;
+width: 964px;
+height: 492px;
+margin: 0 auto;
+background: url(../IMAGES/regional_map.png) no-repeat;
+}
+
+#NI-main-visual_map  #main-visual_col_01,
+#NI-main-visual_map  #main-visual_col_02,
+#NI-main-visual_map  #main-visual_col_03,
+#NI-main-visual_map  #main-visual_col_04 {
+position: absolute;
+margin: 0;
+}
+
+#NI-main-visual_map  #main-visual_col_01 dt,
+#NI-main-visual_map  #main-visual_col_02 dt,
+#NI-main-visual_map  #main-visual_col_03 dt,
+#NI-main-visual_map  #main-visual_col_04 dt {
+margin: 0 0 6px 0;
+}
+
+#NI-main-visual_map  #main-visual_col_01 dd,
+#NI-main-visual_map  #main-visual_col_02 dd,
+#NI-main-visual_map  #main-visual_col_03 dd,
+#NI-main-visual_map  #main-visual_col_04 dd {
+margin: 0;
+}
+
+#NI-main-visual_map  #main-visual_col_01 { left: 648px; top: 286px; }
+#NI-main-visual_map  #main-visual_col_02 { left:  39px; top:  48px; }
+#NI-main-visual_map  #main-visual_col_03 { left: 396px; top: 228px; }
+#NI-main-visual_map  #main-visual_col_04 { left:  50px; top: 413px; }
+
+.NI-column01_btn {
+position: absolute;
+right: 0;
+top: 0;
+}
+
+/* Button 'Expand' or 'Collapse' */
+
+.regional_map_btn {
+display: block;
+width: 69px;
+height: 14px;
+overflow: hidden;
+background-repeat: no-repeat;
+text-indent: 100%;
+white-space: nowrap;
+background-repeat: no-repeat;
+}
+
+#main-visual_col_01 .regional_map_btn { background-image: url(../IMAGES/btn_regional_map_americas.gif); }
+#main-visual_col_02 .regional_map_btn { background-image: url(../IMAGES/btn_regional_map_europe.gif); }
+#main-visual_col_03 .regional_map_btn { background-image: url(../IMAGES/btn_regional_map_asia.gif); }
+#main-visual_col_04 .regional_map_btn { background-image: url(../IMAGES/btn_regional_map_africa.gif); }
+.NI-column01_btn .regional_map_btn    { background-image: url(../IMAGES/btn_regional_map_01.gif); }
+.NI-column01_btn .regional_map_btn {
+display: none;
+}
+
+.Expand {
+background-position: 0 0;
+}
+
+.Collapse {
+background-position: -71px 0;
+}
+
+/* Regional Counories List  */
+
+#NI-contents-block .regional_list_blk:after { content:""; display:block; clear:both; }
+* html #NI-contents-block .regional_list_blk  { display:inline-block; }
+*+html #NI-contents-block .regional_list_blk  { display:inline-block; }
+
+
+#NI-contents-block .regional_list_blk .list_country {
+width: 216px;
+float: left;
+margin: 0 20px 20px 0; 
+}
+
+#NI-contents-block .regional_list_blk .list_country li {
+width: 216px;
+margin: 0; 
+}
+
+#NI-contents-block .regional_list_blk .list_country h4 {
+width: 216px;
+margin: 0 0 8px 0;
+padding: 0;
+font-size: 11px;
+color: #666;
+background-image: none;
+font-weight: normal; 
+_padding: 0;
+}
+
+#NI-contents-block .regional_list_blk .list_country h4:after { content:""; display:block; clear:both; }
+* html #NI-contents-block .regional_list_blk .list_country h4 { display:inline-block; }
+*+html #NI-contents-block .regional_list_blk .list_country h4 { display:inline-block; }
+
+.regional_list_blk .list_country li .flag {
+display: block;
+width: 20px;
+height: 14px;
+float: left;
+margin-top: 1px;
+border: solid 1px #ccc;
+}
+
+.regional_list_blk .list_country li .country {
+display: block;
+width: 190px;
+float: right;
+}
+
+

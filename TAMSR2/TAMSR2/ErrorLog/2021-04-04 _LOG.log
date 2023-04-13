@@ -1,0 +1,1778 @@
+<LogEntry>
+  <Date>4/4/2021 2:36:58 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 2:55:51 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 2:56:27 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>201</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:01:41 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>201</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:01:41 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1118</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:01:45 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>201</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:01:45 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1118</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:01:45 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>201</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:01:45 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1118</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:01:46 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>201</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:01:46 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1118</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:01:46 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>201</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:01:46 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1118</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Procedure or function 'SP_TAMSR2_DeviceFunctions' expects parameter '@TAMSR2_DevicefunctionIdNotIn', which was not supplied.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:19:09 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:35:26 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:45:13 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '66,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:45:13 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '66,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:45:19 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '0,66,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:45:20 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '0,66,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:46:00 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '0,0,66,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:46:00 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '0,0,66,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:46:47 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '0,0,0,66,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:46:47 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '0,0,0,66,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:48:10 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '67,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:49:22 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '67,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 3:49:22 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '67,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:07:49 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '0,67,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:07:49 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '0,67,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:07:51 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '0,0,67,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:07:51 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '0,0,67,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:07:58 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '0,0,0,67,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:07:58 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '0,0,0,67,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:08:50 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '68,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:08:50 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '68,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:08:51 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '0,68,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:08:51 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '0,68,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:08:53 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '0,0,68,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:08:54 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '0,0,68,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:08:55 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '0,0,0,68,' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:08:55 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1119</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Conversion failed when converting the varchar value '0,0,0,68,' to data type int.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:10:42 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>245</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Conversion failed when converting the varchar value '70,69' to data type int.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:32:31 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>102</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Incorrect syntax near ')'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:34:24 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 4:52:05 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 5:26:12 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:20:57 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:22:39 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:22:49 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:24:23 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:25:34 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 892</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:34:34 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:34:41 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 892</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:38:08 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:46:21 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:47:06 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:48:52 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:56:33 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 6:58:13 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 7:01:12 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 7:01:57 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 892</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 7:16:21 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:37:06 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>156</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Incorrect syntax near the keyword 'and'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:37:06 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1204</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Incorrect syntax near the keyword 'and'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:37:06 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>156</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Incorrect syntax near the keyword 'and'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:37:06 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1204</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Incorrect syntax near the keyword 'and'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:37:07 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>156</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Incorrect syntax near the keyword 'and'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:37:07 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1204</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Incorrect syntax near the keyword 'and'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:37:09 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>156</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Incorrect syntax near the keyword 'and'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:39:59 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1204</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Incorrect syntax near the keyword 'and'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:40:01 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>156</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Incorrect syntax near the keyword 'and'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:40:17 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.SaveDeviceFunctions() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1204</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Incorrect syntax near the keyword 'and'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:42:43 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>4/4/2021 8:42:50 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 892</Stack>
+  </Exception>
+</LogEntry>

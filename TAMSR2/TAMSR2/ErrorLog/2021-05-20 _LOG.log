@@ -1,0 +1,13 @@
+<LogEntry>
+  <Date>5/20/2021 12:30:32 PM</Date>
+  <Exception>
+    <Module>RequestPages/TAEventPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>mscorlib</Source>
+    <Message>The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. </Message>
+    <Stack>   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at TAMSR2.RequestPages.TAEventPage.Save() in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2\TAMSR2\RequestPages\TAEventPage.aspx.cs:line 1586</Stack>
+  </Exception>
+</LogEntry>

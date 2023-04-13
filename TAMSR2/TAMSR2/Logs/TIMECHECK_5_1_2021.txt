@@ -1,0 +1,13 @@
+5_1_2021 11:30 PM :Enrollment Started
+5_1_2021 11:30 PM :Device ID:19
+5_1_2021 11:30 PM :baseURL:http://localhost:44325/
+5_1_2021 11:31 PM :Enrollment Started
+5_1_2021 11:31 PM :Device ID:19
+5_1_2021 11:31 PM :baseURL:http://localhost:44325/
+5_1_2021 11:32 PM :Enrollment Started
+5_1_2021 11:32 PM :Device ID:19
+5_1_2021 11:32 PM :baseURL:http://localhost:81/
+5_1_2021 11:32 PM :api/Auth/tokenformovement ->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Sat, 01 May 2021 19:32:57 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]},{"Key":"Content-Length","Value":["46"]}]},"Method":{"Method":"POST"},"RequestUri":"http://localhost:81/api/Auth/tokenformovement","Headers":[{"Key":"Accept","Value":["application/json"]}],"Properties":{}},"IsSuccessStatusCode":true}
+5_1_2021 11:32 PM :accessToken:MjAyMTA1MDExOTMyNTdfc3lzYWRtaW5fMTIzNDU2Nzg=
+5_1_2021 11:32 PM :SendRequest:api/Device/GetDeviceById/->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Sat, 01 May 2021 19:32:57 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":null,"Method":{"Method":"GET"},"RequestUri":"http://localhost:81/api/Device/GetDeviceById/19","Headers":[{"Key":"Accept","Value":["application/json"]},{"Key":"Authorization","Value":["MjAyMTA1MDExOTMyNTdfc3lzYWRtaW5fMTIzNDU2Nzg="]}],"Properties":{}},"IsSuccessStatusCode":true}
+5_1_2021 11:36 PM :baseURL:http://localhost:81/

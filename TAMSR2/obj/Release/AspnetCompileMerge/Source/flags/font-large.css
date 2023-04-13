@@ -1,0 +1,32 @@
+@charset "iso-8859-1";
+
+/* ----------------------------------------------------------------
+    Font Size
+----------------------------------------------------------------- */
+body{
+font-size:120%;
+}
+
+#mainContent div#stockPerformance *{
+font-size:14px;
+}
+
+#mainContent div#stockPerformance strong{
+font-size:18px;
+}
+
+#mainContent div#stockPerformance em{
+font-size:16px;
+}
+
+body#top div#stock div#stockData01 *{
+font-size:16px;
+}
+
+body#top div#stock div#stockData02 *{
+font-size:14px;
+}
+
+body.news #mainContent{
+font-size:14px;
+}

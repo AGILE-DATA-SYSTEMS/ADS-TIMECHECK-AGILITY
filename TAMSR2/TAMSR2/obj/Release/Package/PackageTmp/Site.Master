@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TAMSR2.Site" %>
+
+<%@ Register Src="CustomControls/Header.ascx" TagName="Header" TagPrefix="uc1" %>
+<%@ Register Src="CustomControls/Footer.ascx" TagName="Footer" TagPrefix="uc2" %>
+<%@ Register Src="CustomControls/SideBar.ascx" TagName="SideBar" TagPrefix="uc3" %>
+
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 2.3.1
+Version: 1.2.1
+Author: KeenThemes
+Website: http://www.keenthemes.com/preview/?theme=metronic
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469
+-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="TAMS" name="description" />
+    <meta content="muhammad aqeel abbas" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/plugins/font-awesome/css/font-awesome.min.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/plugins/bootstrap/css/bootstrap.min.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/plugins/bootstrap/css/bootstrap-responsive.min.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/plugins/font-awesome/css/font-awesome.min.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/fontawesome-4.2.0/css/font-awesome.min.css")%>' rel="stylesheet" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/fontawesome5.15.3/css/fontawesome.css")%>' rel="stylesheet" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/css/style-metro.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/css/style.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/css/style-responsive.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/css/themes/" + Session["theme"]) %>' rel="stylesheet" type="text/css" id="style_color" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/plugins/uniform/css/uniform.default.css") %>' rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/plugins/gritter/css/jquery.gritter.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/plugins/bootstrap-daterangepicker/daterangepicker.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/plugins/fullcalendar/fullcalendar/fullcalendar.css") %>' rel="stylesheet" type="text/css" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/plugins/jqvmap/jqvmap/jqvmap.css") %>' rel="stylesheet" type="text/css" media="screen" />
+    <link href='<%= Page.ResolveClientUrl("~/Assets/" + languageStr + "/plugins/jquery-easy-pie-chart/jquery.easy-pie-chart.css") %>' rel="stylesheet" type="text/css" media="screen" />
+    <!-- END PAGE LEVEL STYLES -->
+    <link rel="shortcut icon" href='<%= Page.ResolveClientUrl("~/favicon.ico") %>' />
+
+    <link href='<%= Page.ResolveClientUrl("~/Styles/jquery.loadmask.css") %>' rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top">
+    <form id="form1" runat="server">
+    </form>
+
+
+    <!-- BEGIN HEADER -->
+    <uc1:Header ID="Header" runat="server" />
+    <!-- END HEADER -->
+
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+
+        <!-- BEGIN SIDEBAR -->
+        <uc3:SideBar ID="SideBar" runat="server" />
+        <!-- END SIDEBAR -->
+
+        <!-- BEGIN PAGE -->
+        <div class="page-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- END PAGE -->
+    </div>
+    <!-- END CONTAINER -->
+
+    <!-- BEGIN FOOTER -->
+    <uc2:Footer ID="Footer" runat="server" />
+    <!-- END FOOTER -->
+
+
+    <script type="text/javascript">
+
+
+        $("#sidebarToggler").click(function () {
+
+            $("#sample_1").width("99.5%");
+            $("#Sample_2").width("99.5%");
+            $("#sample_2").width("99.5%");
+        });
+
+    </script>
+
+</body>
+</html>

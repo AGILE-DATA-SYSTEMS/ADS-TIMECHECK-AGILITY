@@ -1,0 +1,53 @@
+GO
+-- =============================================
+-- Author:		<Quanit Khatri>
+-- Create date: <2021-03-24>
+-- Description:	<Get CMI IRIS Devices >
+-- =============================================
+ALTER PROCEDURE [dbo].[GetCMIIRISDevices]
+	
+	
+	AS
+BEGIN
+
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+SELECT        ADS_WDM_DEVICES.*, ADS_WDM_DEVICE_STATUS.ADS_DeviceStatusName, ADS_WDM_DEVICE_TYPE.ADS_DeviceTypeName, ADS_WDM_PUNCH_TYPE.ADS_PunchTypeName
+FROM            ADS_WDM_DEVICES INNER JOIN
+                         ADS_WDM_DEVICE_TYPE ON ADS_WDM_DEVICES.ADS_DeviceTypeID = ADS_WDM_DEVICE_TYPE.ADS_DeviceTypeID INNER JOIN
+                         ADS_WDM_PUNCH_TYPE ON ADS_WDM_DEVICES.ADS_PunchTypeID = ADS_WDM_PUNCH_TYPE.ADS_PunchTypeID INNER JOIN
+                         ADS_WDM_DEVICE_STATUS ON ADS_WDM_DEVICES.ADS_StatusID = ADS_WDM_DEVICE_STATUS.ADS_DeviceStatusID
+						 where ADS_WDM_DEVICES.ADS_DeviceTypeID=2
+						 
+END
+
+GO
+
+USE [TIME_MAIN_SAMBA]
+GO
+/****** Object:  StoredProcedure [dbo].[TAMSR2_GetDevicebyId]    Script Date: 4/5/2021 5:26:16 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Gull NOOR>
+-- Create date: <2019-12-10>
+-- Description:	<Add new device data>
+-- =============================================
+ALTER PROCEDURE [dbo].[TAMSR2_GetDevicebyId]
+	-- Add the parameters for the stored procedure here
+
+	  @ADS_DeviceID int
+      
+AS
+BEGIN
+	SELECT        ADS_WDM_DEVICES.*, ADS_WDM_DEVICE_STATUS.ADS_DeviceStatusName, ADS_WDM_DEVICE_TYPE.ADS_DeviceTypeName, ADS_WDM_PUNCH_TYPE.ADS_PunchTypeName
+FROM            ADS_WDM_DEVICES INNER JOIN
+                         ADS_WDM_DEVICE_TYPE ON ADS_WDM_DEVICES.ADS_DeviceTypeID = ADS_WDM_DEVICE_TYPE.ADS_DeviceTypeID INNER JOIN
+                         ADS_WDM_PUNCH_TYPE ON ADS_WDM_DEVICES.ADS_PunchTypeID = ADS_WDM_PUNCH_TYPE.ADS_PunchTypeID INNER JOIN
+                         ADS_WDM_DEVICE_STATUS ON ADS_WDM_DEVICES.ADS_StatusID = ADS_WDM_DEVICE_STATUS.ADS_DeviceStatusID
+ WHERE ADS_DeviceID=@ADS_DeviceID
+END

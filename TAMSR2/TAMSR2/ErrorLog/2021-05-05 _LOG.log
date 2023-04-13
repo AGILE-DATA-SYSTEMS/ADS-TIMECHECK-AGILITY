@@ -1,0 +1,1175 @@
+<LogEntry>
+  <Date>5/5/2021 11:29:40 AM</Date>
+  <Exception>
+    <Module>SqlDatabase.Open() failed, SqlException Occurred</Module>
+    <ErrorNumber>18456</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Login failed for user ''.</Message>
+    <Stack>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:34:15 AM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:34:16 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:35:17 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:37:53 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:39:30 AM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:39:44 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:40:33 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:43:29 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:45:35 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:47:43 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:48:24 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:50:09 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:51:25 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:55:38 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:56:32 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:56:43 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:58:39 AM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 12:01:18 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 12:01:23 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 12:03:10 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 12:04:08 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 12:11:16 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 12:12:29 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 12:41:04 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 12:41:12 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 12:43:04 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:06:35 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:09:33 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:20:51 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:22:37 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:26:08 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:41:59 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:44:08 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:46:05 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:47:12 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:48:05 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:49:10 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:50:15 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:51:28 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:51:46 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:56:01 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:56:02 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:57:21 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:59:08 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 1:59:23 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 2:01:59 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 2:03:48 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 2:16:03 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 2:19:36 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 2:26:14 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 2:35:04 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 2:41:00 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 2:52:46 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 3:01:41 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 3:07:07 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 3:09:49 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 3:10:13 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 3:13:13 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 3:16:22 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 4:39:33 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 4:45:03 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 4:53:29 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:01:41 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:08:53 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:09:52 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'SP_TAMSR2_AddSelectedToSyncTableWithDeleteFlag'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:09:52 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.&lt;AddSelectedToSyncTableWithDeleteFlag&gt;d__24.MoveNext() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 837</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Could not find stored procedure 'SP_TAMSR2_AddSelectedToSyncTableWithDeleteFlag'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:49:55 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:50:38 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'SP_TAMSR2_AddSelectedToSyncTableWithDeleteFlag'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:50:38 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.&lt;AddSelectedToSyncTableWithDeleteFlag&gt;d__24.MoveNext() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 837</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Could not find stored procedure 'SP_TAMSR2_AddSelectedToSyncTableWithDeleteFlag'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:50:42 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'SP_TAMSR2_AddSelectedToSyncTableWithDeleteFlag'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:50:42 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.&lt;AddSelectedToSyncTableWithDeleteFlag&gt;d__24.MoveNext() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 837</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Could not find stored procedure 'SP_TAMSR2_AddSelectedToSyncTableWithDeleteFlag'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:50:46 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'SP_TAMSR2_AddSelectedToSyncTableWithDeleteFlag'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 5:50:46 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.GetValueProcedure() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 416
+   at TAMSR2.RequestPages.ReaderPage.&lt;AddSelectedToSyncTableWithDeleteFlag&gt;d__24.MoveNext() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 837</Stack>
+    <InnerException>
+      <Module>RequestPages/ReasonPage.aspx.Save()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Could not find stored procedure 'SP_TAMSR2_AddSelectedToSyncTableWithDeleteFlag'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.GetValueProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 403</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:27:25 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:27:31 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:33:48 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:36:27 PM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>2812</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Could not find stored procedure 'TAMSR2_ReaderTypeOps'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/5/2021 11:36:31 PM</Date>
+  <Exception>
+    <Module>RequestPages/ReaderOpsPage.aspx.GerAll()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>System.Data</Source>
+    <Message>Index 0 is either negative or above rows count.</Message>
+    <Stack>   at System.Data.DataView.GetRow(Int32 index)
+   at System.Data.DataView.get_Item(Int32 recordIndex)
+   at TAMSR2.RequestPages.ReaderPage.GetScreenMessageByDeviceID() in F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2\TAMSR2\RequestPages\ReaderPage.aspx.cs:line 1814</Stack>
+  </Exception>
+</LogEntry>

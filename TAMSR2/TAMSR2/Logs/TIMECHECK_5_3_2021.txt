@@ -1,0 +1,92 @@
+5_3_2021 12:01 AM :Device ID:19
+5_3_2021 12:01 AM :baseURL:http://localhost:81/
+5_3_2021 12:01 AM :api/Auth/tokenformovement ->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Sun, 02 May 2021 20:01:45 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]},{"Key":"Content-Length","Value":["46"]}]},"Method":{"Method":"POST"},"RequestUri":"http://localhost:81/api/Auth/tokenformovement","Headers":[{"Key":"Accept","Value":["application/json"]}],"Properties":{}},"IsSuccessStatusCode":true}
+5_3_2021 12:01 AM :accessToken:MjAyMTA1MDIyMDAxNDVfc3lzYWRtaW5fMTIzNDU2Nzg=
+5_3_2021 12:01 AM :SendRequest:api/Device/GetDeviceById/->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Sun, 02 May 2021 20:01:45 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":null,"Method":{"Method":"GET"},"RequestUri":"http://localhost:81/api/Device/GetDeviceById/19","Headers":[{"Key":"Accept","Value":["application/json"]},{"Key":"Authorization","Value":["MjAyMTA1MDIyMDAxNDVfc3lzYWRtaW5fMTIzNDU2Nzg="]}],"Properties":{}},"IsSuccessStatusCode":true}
+5_3_2021 12:01 AM :Enrollment: Starting User Sync
+5_3_2021 12:02 AM :User ASIM SHAHZAD already exist
+5_3_2021 12:52 AM :Device ID:19
+5_3_2021 12:52 AM :baseURL:http://localhost:81/
+5_3_2021 12:52 AM :SendRequest:api/Device/GetDeviceById/->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Sun, 02 May 2021 20:52:41 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":null,"Method":{"Method":"GET"},"RequestUri":"http://localhost:81/api/Device/GetDeviceById/19","Headers":[{"Key":"Accept","Value":["application/json"]},{"Key":"Authorization","Value":["MjAyMTA1MDIyMDAxNDVfc3lzYWRtaW5fMTIzNDU2Nzg="]}],"Properties":{}},"IsSuccessStatusCode":true}
+5_3_2021 12:52 AM :Enrollment: Starting User Sync
+5_3_2021 12:56 AM :Device ID:19
+5_3_2021 12:56 AM :baseURL:http://localhost:81/
+5_3_2021 12:56 AM :SendRequest:api/Device/GetDeviceById/->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Sun, 02 May 2021 20:56:47 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":null,"Method":{"Method":"GET"},"RequestUri":"http://localhost:81/api/Device/GetDeviceById/19","Headers":[{"Key":"Accept","Value":["application/json"]},{"Key":"Authorization","Value":["MjAyMTA1MDIyMDAxNDVfc3lzYWRtaW5fMTIzNDU2Nzg="]}],"Properties":{}},"IsSuccessStatusCode":true}
+5_3_2021 12:56 AM :Enrollment: Starting User Sync
+5_3_2021 1:01 AM :Device ID:19
+5_3_2021 1:01 AM :baseURL:http://localhost:81/
+5_3_2021 1:01 AM :SendRequest:api/Device/GetDeviceById/->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Sun, 02 May 2021 21:01:45 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":null,"Method":{"Method":"GET"},"RequestUri":"http://localhost:81/api/Device/GetDeviceById/19","Headers":[{"Key":"Accept","Value":["application/json"]},{"Key":"Authorization","Value":["MjAyMTA1MDIyMDAxNDVfc3lzYWRtaW5fMTIzNDU2Nzg="]}],"Properties":{}},"IsSuccessStatusCode":true}
+5_3_2021 1:01 AM :Enrollment: Starting User Sync
+5_3_2021 1:03 AM :Device ID:19
+5_3_2021 1:03 AM :baseURL:http://localhost:81/
+5_3_2021 1:03 AM :SendRequest:api/Device/GetDeviceById/->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Sun, 02 May 2021 21:03:03 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":null,"Method":{"Method":"GET"},"RequestUri":"http://localhost:81/api/Device/GetDeviceById/19","Headers":[{"Key":"Accept","Value":["application/json"]},{"Key":"Authorization","Value":["MjAyMTA1MDIyMDAxNDVfc3lzYWRtaW5fMTIzNDU2Nzg="]}],"Properties":{}},"IsSuccessStatusCode":true}
+5_3_2021 1:03 AM :Enrollment: Starting User Sync
+5_3_2021 1:03 AM :User Hussein Saeed Al AHbabi already exist
+5_3_2021 1:03 AM :User Omer Abdalla El Sheikh already exist
+5_3_2021 1:03 AM :User Ahmed Suhail Al Mehiri already exist
+5_3_2021 1:03 AM :User Mahdia Khaled Al Ameri already exist
+5_3_2021 1:03 AM :User Sabah Abdulbari Al Jaberi already exist
+5_3_2021 1:03 AM :User Dalal Mohamed Shemaili already exist
+5_3_2021 1:03 AM :User Entesar Ali Al Fazari already exist
+5_3_2021 1:03 AM :User Khaled Omar Al Amoodi already exist
+5_3_2021 1:03 AM :User Falah Hamood Al Qahtani already exist
+5_3_2021 1:03 AM :User Mubarak Abdul Latif Edrees already exist
+5_3_2021 1:03 AM :User Najma Mohammed Al Muharrami already exist
+5_3_2021 1:03 AM :User Hamzah Abdalla Hassan Ibrahim already exist
+5_3_2021 1:03 AM :User Jamal Salem Obaid S Al Dhaheri already exist
+5_3_2021 1:03 AM :User Fahd Salem Saleh H. Al Wahedi already exist
+5_3_2021 1:03 AM :User Shajar Abbas already exist
+5_3_2021 1:03 AM :User Lubna Adel Ahmed Al Buainain already exist
+5_3_2021 1:03 AM :User Noora Obaid Qambar Obaid already exist
+5_3_2021 1:03 AM :User Prasad Puthiya Veettil already exist
+5_3_2021 1:03 AM :User Amna Obaid Khalifa Al Zaabi already exist
+5_3_2021 1:03 AM :User Lubna Khalil Akbar H Abdulla already exist
+5_3_2021 1:03 AM :User Mahmood ALhay Al Hameli already exist
+5_3_2021 1:03 AM :User Shaikah Saeed Al Dhaheri already exist
+5_3_2021 1:03 AM :User Wadeema Majed Al Mansoori already exist
+5_3_2021 1:03 AM :User Ahmed Mohammed AL Aisaee already exist
+5_3_2021 1:03 AM :User Saad Abdulla I. H. Al Fardan already exist
+5_3_2021 1:03 AM :User Ahmad Mohamad Nabil El Bsat already exist
+5_3_2021 1:03 AM :Device ID:19
+5_3_2021 1:03 AM :baseURL:http://localhost:81/
+5_3_2021 1:03 AM :SendRequest:api/Device/GetDeviceById/->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]}]},"StatusCode":200,"ReasonPhrase":"OK","Headers":[{"Key":"Transfer-Encoding","Value":["chunked"]},{"Key":"Date","Value":["Sun, 02 May 2021 21:03:38 GMT"]},{"Key":"Server","Value":["Kestrel"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":null,"Method":{"Method":"GET"},"RequestUri":"http://localhost:81/api/Device/GetDeviceById/19","Headers":[{"Key":"Accept","Value":["application/json"]},{"Key":"Authorization","Value":["MjAyMTA1MDIyMDAxNDVfc3lzYWRtaW5fMTIzNDU2Nzg="]}],"Properties":{}},"IsSuccessStatusCode":true}
+5_3_2021 1:03 AM :Enrollment: Starting User Sync
+5_3_2021 1:03 AM :User Hussein Saeed Al AHbabi already exist
+5_3_2021 1:03 AM :User Omer Abdalla El Sheikh already exist
+5_3_2021 1:03 AM :User Ahmed Suhail Al Mehiri already exist
+5_3_2021 1:03 AM :User Mahdia Khaled Al Ameri already exist
+5_3_2021 1:03 AM :User Sabah Abdulbari Al Jaberi already exist
+5_3_2021 1:03 AM :User Dalal Mohamed Shemaili already exist
+5_3_2021 1:03 AM :User Entesar Ali Al Fazari already exist
+5_3_2021 1:03 AM :User Khaled Omar Al Amoodi already exist
+5_3_2021 1:03 AM :User Falah Hamood Al Qahtani already exist
+5_3_2021 1:03 AM :User Mubarak Abdul Latif Edrees already exist
+5_3_2021 1:03 AM :User Najma Mohammed Al Muharrami already exist
+5_3_2021 1:03 AM :User Hamzah Abdalla Hassan Ibrahim already exist
+5_3_2021 1:03 AM :User Jamal Salem Obaid S Al Dhaheri already exist
+5_3_2021 1:03 AM :User Fahd Salem Saleh H. Al Wahedi already exist
+5_3_2021 1:03 AM :User Shajar Abbas already exist
+5_3_2021 1:03 AM :User Lubna Adel Ahmed Al Buainain already exist
+5_3_2021 1:03 AM :User Noora Obaid Qambar Obaid already exist
+5_3_2021 1:03 AM :User Prasad Puthiya Veettil already exist
+5_3_2021 1:03 AM :User Amna Obaid Khalifa Al Zaabi already exist
+5_3_2021 1:03 AM :User Lubna Khalil Akbar H Abdulla already exist
+5_3_2021 1:03 AM :User Mahmood ALhay Al Hameli already exist
+5_3_2021 1:03 AM :User Shaikah Saeed Al Dhaheri already exist
+5_3_2021 1:03 AM :User Wadeema Majed Al Mansoori already exist
+5_3_2021 1:03 AM :User Ahmed Mohammed AL Aisaee already exist
+5_3_2021 1:03 AM :User Saad Abdulla I. H. Al Fardan already exist
+5_3_2021 1:03 AM :User Ahmad Mohamad Nabil El Bsat already exist
+5_3_2021 1:03 AM :User Khadeja Ghaleb Ali Al Obathani already exist
+5_3_2021 1:03 AM :User Juan Antonio Gomez C Muller already exist
+5_3_2021 1:03 AM :User Basil Walid. S ElAbbasi already exist
+5_3_2021 1:03 AM :User Daniel Thomas Tromans already exist
+5_3_2021 1:03 AM :User Rashed Abdulaziz Hadif Al Shamsi already exist
+5_3_2021 1:03 AM :User ASIM SHAHZAD already exist
+5_3_2021 1:03 AM :User Dr. Hana Mohamed Al Mahri already exist
+5_3_2021 1:03 AM :User Khalifa Abdulla Al Ahbabi already exist
+5_3_2021 1:03 AM :User Amal Abdullahi Eltom already exist
+5_3_2021 1:03 AM :User Hassan Rashed Al Dhanhani already exist
+5_3_2021 1:03 AM :User Safeya Abdulla M. A. Al Hashmi already exist
+5_3_2021 1:03 AM :User Ruqaya Mohamed AL Kaabi already exist
+5_3_2021 1:03 AM :User Bakheeta Majed Matar M Al Mansoori already exist

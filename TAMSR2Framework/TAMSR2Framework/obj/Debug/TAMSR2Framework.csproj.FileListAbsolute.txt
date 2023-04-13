@@ -1,0 +1,43 @@
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.pdb
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.dll
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.pdb
+C:\Git_Repositories\TimeCheck_TADWEER_Working\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csprojResolveAssemblyReference.cache
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.pdb
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csprojAssemblyReference.cache
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csproj.CoreCompileInputs.cache
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.dll
+D:\source-code\TIMECHECK\SAMBA\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.pdb
+D:\AB_Workspace\GIT_DESKTOP\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.dll
+D:\AB_Workspace\GIT_DESKTOP\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.pdb
+D:\AB_Workspace\GIT_DESKTOP\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csproj.CoreCompileInputs.cache
+D:\AB_Workspace\GIT_DESKTOP\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.dll
+D:\AB_Workspace\GIT_DESKTOP\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.pdb
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.pdb
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.dll
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.pdb
+C:\GitHub_Repositories\ADS-TIMECHECK-SAMBA_taha\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csprojResolveAssemblyReference.cache
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.pdb
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csprojAssemblyReference.cache
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.dll
+F:\SirMuneeb\Agile Project\Projects\ADS-TIMECHECK-SAMBA\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.pdb
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.pdb
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csproj.CoreCompileInputs.cache
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.dll
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.pdb
+D:\source-code\TIMECHECK\CMI\ADS_TIMECHECK_CMI\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csprojAssemblyReference.cache
+D:\source-code\TIMECHECK\OBEIKAN\ADS_TIMECHECK_OBEIKAN\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.dll
+D:\source-code\TIMECHECK\OBEIKAN\ADS_TIMECHECK_OBEIKAN\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.pdb
+D:\source-code\TIMECHECK\OBEIKAN\ADS_TIMECHECK_OBEIKAN\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csproj.CoreCompileInputs.cache
+D:\source-code\TIMECHECK\OBEIKAN\ADS_TIMECHECK_OBEIKAN\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.dll
+D:\source-code\TIMECHECK\OBEIKAN\ADS_TIMECHECK_OBEIKAN\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.pdb
+C:\WorkSpace\WorkSpace\ADS-TIMECHECK-DGF\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.dll
+C:\WorkSpace\WorkSpace\ADS-TIMECHECK-DGF\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.pdb
+C:\WorkSpace\WorkSpace\ADS-TIMECHECK-DGF\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csproj.AssemblyReference.cache
+C:\WorkSpace\WorkSpace\ADS-TIMECHECK-DGF\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csproj.CoreCompileInputs.cache
+C:\WorkSpace\WorkSpace\ADS-TIMECHECK-DGF\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.dll
+C:\WorkSpace\WorkSpace\ADS-TIMECHECK-DGF\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.pdb

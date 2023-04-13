@@ -1,0 +1,107 @@
+
+/* Regional Tip  */
+
+#tipBlock {
+position: absolute;
+width: 199px;
+color: #fff;
+display: none;
+background: url(/EN/GLOBAL/IMAGES/bg_tipBlock_arrow.png) no-repeat 16px 18px; 
+padding-top: 24px;
+padding-bottom: 20px;
+z-index: 9999;
+cursor: pointer; 
+}
+
+#tipBlock #tipWrapper {
+position: relative;
+width: 199px;
+}
+
+#tipBlock #tipWrapper #tipBg {
+position: absolute;
+top: 0;
+left: 0;
+width: 199px;
+background-color:#000;
+filter:alpha(opacity=76);
+-moz-opacity:0.76;
+-khtml-opacity: 0.76;
+opacity:0.76;
+}
+
+.tipArea {
+margin: 0 0 10px 0 !important;
+padding: 10px 0 15px 0 !important;
+font-size: 92%;
+}
+
+#NI-contents-block .regional_list_blk .tipArea {
+width: 199px;
+background: #f9f9f9;
+}
+
+.tipArea li{
+width: 149px !important;
+margin: 0 0 8px 15px !important;
+padding-left: 20px;
+background-repeat: no-repeat;
+background-position: 0 2px;
+}
+
+#tipWrapper .tipArea {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+#tipWrapper .tipArea a,
+#tipWrapper .tipArea a:link,
+#tipWrapper .tipArea a:visited {
+text-decoration: underline !important;
+color: #fff;
+}
+
+#tipWrapper .tipArea a:hover {
+color: #5794bb;
+}
+
+.tipArea li.NISSAN     { background-image: url(/EN/GLOBAL/IMAGES/ICON/ico_nissan_14_14.gif); }
+.tipArea li.Infiniti   { background-image: url(/EN/GLOBAL/IMAGES/ICON/ico_infiniti_14_14.gif); }
+.tipArea li.Forklift   { background-image: url(/EN/GLOBAL/IMAGES/ICON/ico_forklift_14_14.gif); }
+.tipArea li.Marine     { background-image: url(/EN/GLOBAL/IMAGES/ICON/ico_marine_14_14.gif); }
+.tipArea li.facebook   { background-image: url(/EN/SOCIAL/IMAGES/icon_14_14_facebook.gif); }
+.tipArea li.twitter    { background-image: url(/EN/SOCIAL/IMAGES/icon_14_14_twitter.gif); }
+.tipArea li.youtube    { background-image: url(/EN/SOCIAL/IMAGES/icon_14_14_youtube.gif); }
+.tipArea li.ustream    { background-image: url(/EN/SOCIAL/IMAGES/icon_14_14_ustream.gif); }
+.tipArea li.other      { background-image: url(/EN/SOCIAL/IMAGES/icon_14_14_other.gif); }
+.tipArea li.googleplus { background-image: url(/EN/SOCIAL/IMAGES/icon_14_14_other_googleplus.gif); }
+.tipArea li.flickr     { background-image: url(/EN/SOCIAL/IMAGES/icon_14_14_other_flickr.gif); }
+
+#tipWrapper .tipArea li.closeBt {
+position: relative;
+height: 8px;
+background: none;
+}
+
+#tipWrapper .tipArea li.closeBt a {
+display: block;
+position: absolute;
+width: 42px;
+height: 8px;
+overflow: hidden;
+top: 0;
+right: 0;
+background: url(/EN/GLOBAL/IMAGES/bg_btn_close.gif) no-repeat 0 0;
+}
+
+#tipWrapper .tipArea li.closeBt a, 
+#tipWrapper .tipArea li.closeBt a:link, 
+#tipWrapper .tipArea li.closeBt a:visited {
+background-position: 0 0;
+}
+
+#tipWrapper .tipArea li.closeBt a:hover {
+background-position: 0 -12px;
+}
+

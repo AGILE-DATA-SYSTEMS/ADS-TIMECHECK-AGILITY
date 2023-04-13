@@ -1,0 +1,8 @@
+@charset "iso-8859-1";
+
+/* ----------------------------------------------------------------
+    Import CSS Files for Print Media
+----------------------------------------------------------------- */
+@import "default_print.css";
+@import "modules_print.css";
+@import "layout_print.css";

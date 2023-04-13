@@ -1,0 +1,45 @@
+5_5_2021 11:46 AM :baseURL:http://localhost:81/
+5_5_2021 11:57 AM :baseURL:http://localhost:81/
+5_5_2021 12:04 PM :Enrollment Started
+5_5_2021 12:04 PM :Device ID:7
+5_5_2021 12:04 PM :baseURL:http://localhost:81/
+5_5_2021 12:12 PM :baseURL:http://localhost:81/
+5_5_2021 1:46 PM :baseURL:http://localhost:81/
+5_5_2021 1:46 PM :baseURL:http://localhost:81/
+5_5_2021 1:48 PM :baseURL:http://localhost:81/
+5_5_2021 1:49 PM :baseURL:http://localhost:81/
+5_5_2021 1:49 PM :baseURL:http://localhost:81/
+5_5_2021 1:49 PM :baseURL:http://localhost:81/
+5_5_2021 1:50 PM :baseURL:http://localhost:81/
+5_5_2021 1:51 PM :baseURL:http://localhost:81/
+5_5_2021 1:51 PM :baseURL:http://localhost:81/
+5_5_2021 1:56 PM :baseURL:http://localhost:81/
+5_5_2021 1:56 PM :baseURL:http://localhost:81/
+5_5_2021 1:56 PM :baseURL:http://localhost:81/
+5_5_2021 1:57 PM :baseURL:http://localhost:81/
+5_5_2021 2:35 PM :baseURL:http://localhost:81/
+5_5_2021 2:41 PM :baseURL:http://localhost:81/
+5_5_2021 4:39 PM :Device ID:7
+5_5_2021 4:39 PM :baseURL:http://localhost:81/
+5_5_2021 4:46 PM :Device ID:7
+5_5_2021 4:46 PM :baseURL:http://localhost:81/
+5_5_2021 4:47 PM :baseURL:http://localhost:81/
+5_5_2021 4:47 PM :Device ID:7
+5_5_2021 4:47 PM :baseURL:http://localhost:81/
+5_5_2021 4:53 PM :Enrollment Started
+5_5_2021 4:53 PM :Device ID:7
+5_5_2021 4:53 PM :baseURL:http://localhost:81/
+5_5_2021 5:05 PM :baseURL:http://localhost:81/
+5_5_2021 5:08 PM :Device ID:7
+5_5_2021 5:08 PM :baseURL:http://localhost:81/
+5_5_2021 5:09 PM :Enrollment Started
+5_5_2021 5:09 PM :Device ID:7
+5_5_2021 5:09 PM :baseURL:http://localhost:81/
+5_5_2021 5:09 PM :Enrollment Started
+5_5_2021 5:09 PM :Device ID:7
+5_5_2021 5:09 PM :baseURL:http://localhost:81/
+5_5_2021 5:50 PM :Enrollment Started
+5_5_2021 5:50 PM :Device ID:7
+5_5_2021 5:50 PM :baseURL:http://localhost:81/
+5_5_2021 11:37 PM :baseURL:http://localhost:81/
+5_5_2021 11:37 PM :api/Auth/tokenformovement ->{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Length","Value":["1468"]},{"Key":"Content-Type","Value":["text/html"]}]},"StatusCode":502,"ReasonPhrase":"Bad Gateway","Headers":[{"Key":"Date","Value":["Wed, 05 May 2021 19:37:33 GMT"]},{"Key":"Server","Value":["Microsoft-IIS/10.0"]},{"Key":"X-Powered-By","Value":["ASP.NET"]}],"RequestMessage":{"Version":{"Major":1,"Minor":1,"Build":-1,"Revision":-1,"MajorRevision":-1,"MinorRevision":-1},"Content":{"Headers":[{"Key":"Content-Type","Value":["application/json; charset=utf-8"]},{"Key":"Content-Length","Value":["46"]}]},"Method":{"Method":"POST"},"RequestUri":"http://localhost:81/api/Auth/tokenformovement","Headers":[{"Key":"Accept","Value":["application/json"]}],"Properties":{}},"IsSuccessStatusCode":false}
