@@ -17,7 +17,7 @@
         #divchkboxNeedApproval,
         #divchkboxAllowAttachement,
         #divchkboxCommentsMandatory{
-            display:none !important;
+            display:block !important;
         }
     </style>
     
@@ -28,6 +28,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
          <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <!-- aafq-->
          <div id="portlet-config" class="modal hide">
             <div class="modal-body">
                <div class="row-fluid">
@@ -542,6 +543,7 @@
                url: '<%= Page.ResolveClientUrl("../RequestPages/LeavePage.aspx") %>',
                success: function (html) {
                    if (html != "") {
+                       
                        var j = $.parseJSON(html);
                        $("#spnID").val(j.ID);
                        $("#txtDescriptionEn").val(j.DescriptionEn);
@@ -561,7 +563,8 @@
                            $("#chkboxAllowAttachement").attr("checked", "checked");
                            $("#uniform-chkboxAllowAttachement span").addClass("checked");
                        }
-                       if (j.IsCommentMandatory + "" == "1") {
+                       debugger
+                       if (j.IsCommentMandatory + "" == "true") {
                            $("#chkboxCommentsMandatory").attr("checked", "checked");
                            $("#uniform-chkboxCommentsMandatory span").addClass("checked");
                        }
@@ -582,7 +585,7 @@
        }
 
        function Save() {
-           debugger;
+           debugger
            var id = $("#spnID").html();
            var descriptionEn = $("#txtDescriptionEn").val();
            var descriptionAr = $("#txtDescriptionAr").val();

@@ -15,6 +15,8 @@ using TAMSR2.CustomClasses;
 using TAMSR2.ObjectClasses;
 using TAMSR2Framework;
 using TAMSR2Framework.DAL;
+using ClosedXML.Excel;
+using System.Text;
 
 namespace TAMSR2.Reports
 {
@@ -231,8 +233,6 @@ namespace TAMSR2.Reports
                     objDataView = objDal.Connection.ExecuteProcedure("Rpt_Standard_Template_Execution", ht);
                 }
                 Boolean.TryParse(objApp.Value, out isUngrouped);
-
-
                 if (ReportTitle.Trim().IndexOf("MedicalPassReport") != -1 || ReportTitle.Trim().IndexOf("MedicalPassReport") != -1)
                 {
                     this.rpt.Load(this.Server.MapPath("../CrystalReports/Medical_Pass_Report_Eng.rpt"));
@@ -251,7 +251,6 @@ namespace TAMSR2.Reports
                     else
                         this.rpt.Load(this.Server.MapPath("../CrystalReports/Arabic_DMR_Report.rpt"));
                 }
-
                 else if (this.ReportTitle.Trim() == "Daily Movement Report" || ReportTitle.Trim().IndexOf("التقرير التحركات اليومي") != -1)
                 {
                     if (this.languagePostfix == "_eng")
@@ -434,12 +433,13 @@ namespace TAMSR2.Reports
                     Response.Buffer = true;
                     if (!string.IsNullOrEmpty(Request["format"] + "".Trim()) && Request["format"] == "dataonly")
                     {
-                        ExporttoExcel(dt); 
-
+                        DownloadExcelClosedXML(dt);
+                        //string data = ExportExcel(dt);
+                        //Response.Write(data);
                     }
                     else
                     { 
-                        rpt.ExportOptions.ExportFormatType = ExportFormatType.Excel; 
+                        rpt.ExportOptions.ExportFormatType = ExportFormatType.XLSXRecord; 
                         ExcelFormatOptions objExcelOptions = new ExcelFormatOptions();
                         objExcelOptions.ExportPageHeadersAndFooters = ExportPageAreaKind.OnEachPage;
                         objExcelOptions.ExportPageBreaksForEachPage = true;
@@ -569,22 +569,931 @@ namespace TAMSR2.Reports
 
 
         }
-
         #endregion
 
+        private void DownloadExcelClosedXML(DataTable dt)
+        {
+            using (var workbook = new XLWorkbook())
+            {
+                var worksheet = workbook.Worksheets.Add("Sheet1");
+                // Add "Daily Movement Report" in the first row
+                var titleRow = worksheet.Row(1);
+                titleRow.Height = 25;
+                var titleCell = titleRow.Cell(1);
+                titleCell.Value = ReportTitle;
+                titleCell.Style.Font.Bold = true;
+                titleCell.Style.Font.FontSize = 18;
+                titleCell.Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                worksheet.Range("A1:E1").Merge();
+                worksheet.Range("A1:E1").Style.Border.TopBorder = XLBorderStyleValues.Thick;
+                worksheet.Range("A1:E1").Style.Border.BottomBorder = XLBorderStyleValues.Thick;
+                worksheet.Range("A1:E1").Style.Border.LeftBorder = XLBorderStyleValues.Thick;
+                worksheet.Range("A1:E1").Style.Border.RightBorder = XLBorderStyleValues.Thick;
+                var cellD1 = worksheet.Range("E1:P3");
+                cellD1.Style.Border.TopBorder = XLBorderStyleValues.None;
+                cellD1.Style.Border.LeftBorder = XLBorderStyleValues.None;
+                cellD1.Style.Border.RightBorder = XLBorderStyleValues.None;
+                cellD1.Style.Border.BottomBorder = XLBorderStyleValues.None;
+                // Add "From" in the second row
+                var fromRow = worksheet.Row(2);
+                var fromCell = fromRow.Cell(1);
+                fromCell.Value = "From";
+                fromCell.Style.Font.Bold = false;
+                // Add "FromDate" in the second row
+                var FromDateCell = fromRow.Cell(2);
+                FromDateCell.Value = fromDate;
+                FromDateCell.Style.Font.Bold = false;
+                // Add text in cell B3
+                var toCell = worksheet.Cell(2, 3);
+                toCell.Value = "To";
+                // Add text in cell B4
+                var textCell = worksheet.Cell(2, 4);
+                textCell.Value = toDate;
+                if (ReportTitle.Trim().IndexOf("Daily Movement Report") != -1 || ReportTitle.Trim().IndexOf("التقرير اليومى") != -1)
+                {
+                    var firstHead = worksheet.Cell(4, 1);
+                    firstHead.Value = "BU";
+                    firstHead.Style.Font.Bold = true;
+                    var secondHead = worksheet.Cell(4, 2);
+                    secondHead.Value = "Department";
+                    secondHead.Style.Font.Bold = true;
+                    var thirdHead = worksheet.Cell(4, 3);
+                    thirdHead.Value = "Section";
+                    thirdHead.Style.Font.Bold = true;
+                    var forthHead = worksheet.Cell(4, 4);
+                    forthHead.Value = "Number";
+                    forthHead.Style.Font.Bold = true;
+                    var fifthHead = worksheet.Cell(4, 5); 
+                    fifthHead.Value = "Name";
+                    fifthHead.Style.Font.Bold = true;
+                    var sixthHead = worksheet.Cell(4, 6); 
+                    sixthHead.Value = "Date";
+                    sixthHead.Style.Font.Bold = true;
+                    var seventhHead = worksheet.Cell(4, 7);
+                    seventhHead.Value = "Time In";
+                    seventhHead.Style.Font.Bold = true;
+                    var eighthHead = worksheet.Cell(4, 8); 
+                    eighthHead.Value = "Time Out";
+                    eighthHead.Style.Font.Bold = true;
+                    var ninethHead = worksheet.Cell(4, 9); 
+                    ninethHead.Value = "Late";
+                    ninethHead.Style.Font.Bold = true;
+                    var tenthHead = worksheet.Cell(4, 10); 
+                    tenthHead.Value = "Early";
+                    tenthHead.Style.Font.Bold = true;
+                    var eleventhHead = worksheet.Cell(4, 11); 
+                    eleventhHead.Value = "Worked Hours";
+                    eleventhHead.Style.Font.Bold = true;
+                    var twelvethHead = worksheet.Cell(4, 12); 
+                    twelvethHead.Value = "Req. Hours";
+                    twelvethHead.Style.Font.Bold = true;
+                    var thirteenthHead = worksheet.Cell(4, 13);
+                    thirteenthHead.Value = "Missed Hours";
+                    thirteenthHead.Style.Font.Bold = true;
+                    var forteenthHead = worksheet.Cell(4, 14); 
+                    forteenthHead.Value = "Extra Hours";
+                    forteenthHead.Style.Font.Bold = true;
+                    var fifteenthHead = worksheet.Cell(4, 15);
+                    fifteenthHead.Value = "Schedule";
+                    fifteenthHead.Style.Font.Bold = true;
+                    var sixteenthHead = worksheet.Cell(4, 16); 
+                    sixteenthHead.Value = "Comments";
+                    sixteenthHead.Style.Font.Bold = true;
 
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r";
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ";
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
 
+                    }
+                }
+
+                else if (ReportTitle.Trim() == "Employee Movements Report" || ReportTitle.Trim() == "دخول و خروج الموظف")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Time";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Trans Mode";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "Device";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "Comments";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim() == "Absentees Report" || ReportTitle.Trim() == "الغياب")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Day";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Remarks";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "Time In";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "Time Out";
+                    var eleventhHead = worksheet.Cell(4, 11).Value = "Late";
+                    var twelvethHead = worksheet.Cell(4, 12).Value = "Early";
+                    var thirteenthHead = worksheet.Cell(4, 13).Value = "Worked Hours";
+                    var forteenthHead = worksheet.Cell(4, 14).Value = "Req Hours";
+                    var fifteenthHead = worksheet.Cell(4, 15).Value = "Missed Hours";
+                    var sixteenthHead = worksheet.Cell(4, 16).Value = "Extra Hours";
+                    var seventeenthHead = worksheet.Cell(4, 17).Value = "Schedule";
+                    var eightteenthHead = worksheet.Cell(4, 18).Value = "Comments";
+                    var ninteenthHead = worksheet.Cell(4, 19).Value = "Site";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+
+                }
+                else if (ReportTitle.Trim() == "Late In Report" || ReportTitle.Trim() == "التأخير")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Late In";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Time In";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "Time Out";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "Late";
+                    var eleventhHead = worksheet.Cell(4, 11).Value = "Early";
+                    var twelvethHead = worksheet.Cell(4, 12).Value = "Worked Hour";
+                    var thirteenthHead = worksheet.Cell(4, 13).Value = "Req Hours";
+                    var forteenthHead = worksheet.Cell(4, 14).Value = "Missed Hours";
+                    var fifteenthHead = worksheet.Cell(4, 15).Value = "Extra Hours";
+                    var sixteenthHead = worksheet.Cell(4, 16).Value = "Schedule";
+                    var seventeenthHead = worksheet.Cell(4, 17).Value = "Comments";
+                    var eightteenthHead = worksheet.Cell(4, 18).Value = "Site";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+
+                }
+                else if (ReportTitle.Trim() == "Early Out Report" || ReportTitle.Trim() == "الخروج المبكر")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Time Out";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Early Out";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "Schedule";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim() == "Attendance Summary Report" || ReportTitle.Trim() == "ملخص الحضور و الانصراف")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "no. of absent day";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "no. of unauthorized absent";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "no. of holidays";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "no. of late in";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "late in hours";
+                    var eleventhHead = worksheet.Cell(4, 11).Value = "no. of early out";
+                    var twelvethHead = worksheet.Cell(4, 12).Value = "early out hours";
+                    var thirteenthHead = worksheet.Cell(4, 13).Value = "approved leaves";
+                    var forteenthHead = worksheet.Cell(4, 14).Value = "required hours";
+                    var fifteenthHead = worksheet.Cell(4, 15).Value = "working hours";
+                    var sixteenthHead = worksheet.Cell(4, 16).Value = "missing hours";
+                    var seventeenthHead = worksheet.Cell(4, 17).Value = "extra hours";
+                    var eightteenthHead = worksheet.Cell(4, 18).Value = "total hours";
+                    var nineteenthHead = worksheet.Cell(4, 19).Value = "no. of missed in";
+                    var twentythHead = worksheet.Cell(4, 20).Value = "no. of missed out";
+                    var twentyfirstHead = worksheet.Cell(4, 21).Value = "no. of personal Permissions";
+                    var twentysecondHead = worksheet.Cell(4, 22).Value = "Personal Permissions Hours";
+                    var twentythirdHead = worksheet.Cell(4, 23).Value = "No. of Official Permissions";
+                    var twentyforthHead = worksheet.Cell(4, 24).Value = "Official Permissions Hours";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim() == "Employee Details Report" || ReportTitle.Trim() == "بيانات الموظف")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Join Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Status";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Designation";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim() == "No Time IN Report")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Schedule In";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Missing In";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "Time In";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "Time Out";
+                    var eleventhHead = worksheet.Cell(4, 11).Value = "Late";
+                    var twelvethHead = worksheet.Cell(4, 12).Value = "Early";
+                    var thirteenthHead = worksheet.Cell(4, 13).Value = "Worked Hour";
+                    var forteenthHead = worksheet.Cell(4, 14).Value = "Req hours";
+                    var fifteenthHead = worksheet.Cell(4, 15).Value = "Missed Hour";
+                    var sixteenthHead = worksheet.Cell(4, 16).Value = "Extra Hour";
+                    var seventeenthHead = worksheet.Cell(4, 17).Value = "Schedule";
+                    var eightteenthHead = worksheet.Cell(4, 18).Value = "Comments";
+                    var nineteenthHead = worksheet.Cell(4, 19).Value = "Site";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim() == "No Time Out Report")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Schedule Out";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Missing In";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "Time In";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "Time Out";
+                    var eleventhHead = worksheet.Cell(4, 11).Value = "Late";
+                    var twelvethHead = worksheet.Cell(4, 12).Value = "Early";
+                    var thirteenthHead = worksheet.Cell(4, 13).Value = "Worked Hour";
+                    var forteenthHead = worksheet.Cell(4, 14).Value = "Req hours";
+                    var fifteenthHead = worksheet.Cell(4, 15).Value = "Missed Hour";
+                    var sixteenthHead = worksheet.Cell(4, 16).Value = "Extra Hour";
+                    var seventeenthHead = worksheet.Cell(4, 17).Value = "Schedule";
+                    var eightteenthHead = worksheet.Cell(4, 18).Value = "Comments";
+                    var nineteenthHead = worksheet.Cell(4, 19).Value = "Site";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim().IndexOf("Permissions Report") != -1 || ReportTitle.Trim().IndexOf("تقرير الإذن") != -1)
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "From Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "To Date";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Permission Type";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "From Time";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "To Time";
+                    var eleventhHead = worksheet.Cell(4, 11).Value = "Permission Time";
+                    var twelvethHead = worksheet.Cell(4, 12).Value = "Status";
+                    var thirteenthHead = worksheet.Cell(4, 13).Value = "Applied By";
+                    var forteenthHead = worksheet.Cell(4, 14).Value = "Approved By";
+                    var fifteenthHead = worksheet.Cell(4, 15).Value = "Total Official Permission Hours";
+                    var sixteenthHead = worksheet.Cell(4, 16).Value = "Total Personal Permission Hours";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim().IndexOf("No Time In/Out Report") != -1 || ReportTitle.Trim().IndexOf("تقرير بدون حركة دخول/خروج") != -1)
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Schedule In";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Time In";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "Schedule Out";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "Missing Out";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim().IndexOf("Employee Year Summary Report") != -1 || ReportTitle.Trim().IndexOf("تقرير الملخص السنوية الموظف ") != -1)
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Type";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Jan";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Feb";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "Mar";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "Apr";
+                    var eleventhHead = worksheet.Cell(4, 11).Value = "May";
+                    var twelvethHead = worksheet.Cell(4, 12).Value = "Jun";
+                    var thirteenthHead = worksheet.Cell(4, 13).Value = "Jul";
+                    var forteenthHead = worksheet.Cell(4, 14).Value = "Aug";
+                    var fifteenthHead = worksheet.Cell(4, 15).Value = "Sep";
+                    var sixteenthHead = worksheet.Cell(4, 16).Value = "Oct";
+                    var seventeenthHead = worksheet.Cell(4, 17).Value = "Nov";
+                    var eightteenthHead = worksheet.Cell(4, 18).Value = "Dec";
+                    var nineteenthHead = worksheet.Cell(4, 19).Value = "Total";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim() == "Employee Overtime Report" || ReportTitle.Trim() == "التقرير العمل الإضافي للموظف" || ReportTitle.Trim().IndexOf("Employee Extra Hours Report") != -1 ||
+                         ReportTitle.Trim().IndexOf("HR Overtime Report") != -1 || ReportTitle.Trim().IndexOf(" ساعة إضافية") != -1)
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Time In";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Time Out";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "Extra Hours";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "Overtime";
+                    var eleventhHead = worksheet.Cell(4, 11).Value = "Total Extra Hours";
+                    var twelvethHead = worksheet.Cell(4, 12).Value = "Total Overtime";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim() == "Employee Deduction Report" || ReportTitle.Trim() == "التقرير المخالفات الموظف")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Shortage";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Voilation In Hours";
+                    var ninethHead = worksheet.Cell(4, 9).Value = "Deduction Formula";
+                    var tenthHead = worksheet.Cell(4, 10).Value = "Deduction Amount";
+                    var eleventhHead = worksheet.Cell(4, 11).Value = "Total Deduction";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim() == "Total Movement Report")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "Employee Code";
+                    var secondHead = worksheet.Cell(4, 2).Value = "Name";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "Department";
+                    var forthHead = worksheet.Cell(4, 4).Value = "Job";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "Site";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "Total Lateness";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "Total Absences";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "Period";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                else if (ReportTitle.Trim() == "تقرير الحركة الإجمالي")
+                {
+                    var firstHead = worksheet.Cell(4, 1).Value = "فترة";
+                    var secondHead = worksheet.Cell(4, 2).Value = "مجموع الغياب";
+                    var thirdHead = worksheet.Cell(4, 3).Value = "إجمالي التأخير";
+                    var forthHead = worksheet.Cell(4, 4).Value = "موقع";
+                    var fifthHead = worksheet.Cell(4, 5).Value = "مهنة";
+                    var sixthHead = worksheet.Cell(4, 6).Value = "قسم";
+                    var seventhHead = worksheet.Cell(4, 7).Value = "اسم الموظف";
+                    var eighthHead = worksheet.Cell(4, 8).Value = "رمز الموظف";
+                    try
+                    {
+                        int rowIndex = 5;
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            //Here work
+                            for (int i = 0; i <= 16; i++)
+                            {
+                                if (dt.Columns[i].ColumnName != "Column1")
+                                {
+                                    if (row[i].ToString().StartsWith("-") == true)
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r".ToString();
+                                    }
+                                    else
+                                    {
+                                        worksheet.Cell(rowIndex, i + 1).Value = row[i] + " ".ToString();
+                                    }
+                                }
+                            }
+                            rowIndex++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+                using (var stream = new MemoryStream())
+                {
+                    workbook.SaveAs(stream);
+                    var content = stream.ToArray();
+                    Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheet.sheet";
+                    Response.AddHeader("content-disposition", "attachment; filename=" + ReportTitle + ".xlsx");
+                    Response.BinaryWrite(content);
+                    Response.End();
+                }
+            }
+        }
+        //private string ExportExcel(DataTable table)
+        //{
+        //    StringBuilder sb = new StringBuilder();
+        //    try
+        //    {
+        //        sb.Append("<BR><BR><BR>");
+        //        sb.Append("<TR><TD colspan='5' style='font-size:16.0pt; font-family:Calibri; text-align: center; font-weight:bold;'>" + ReportTitle.Replace(" ", "").Trim() + "</td></TR>");
+        //        sb.Append("<TR><td>From Date</td><TD>" + fromDate + "</td>");
+        //        sb.Append("<td>To Date</td><TD>" + toDate + "</td></TR>");
+        //        sb.Append("<TR><td>&nbsp</td></TR>");
+        //        string[] ColmHeaders = null;
+        //        if (ReportTitle.Trim().IndexOf("Daily Movement Report") != -1 || ReportTitle.Trim().IndexOf("التقرير اليومى") != -1)
+        //        {
+        //            ColmHeaders = new string[]{"BU","Department","Section","Number","Name" ,"Date","Time In","Time Out","Late","Early","Worked Hours","Req. Hours", "Missed Hours"
+        //                                     ,"Extra Hours","Schedule ","Comments" };
+        //        }
+        //        else if (ReportTitle.Trim() == "Employee Movements Report" || ReportTitle.Trim() == "دخول و خروج الموظف")
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Time", "Trans Mode", "Device", "Comments" };
+        //        }
+        //        else if (ReportTitle.Trim() == "Absentees Report" || ReportTitle.Trim() == "الغياب")
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Day", "Remarks", "Time In", "Time Out", "Late", "Early", "Worked Hour", "Req Hour", "Missed Hour", "Extra Hour", "Schedule", "Comments", "Site" };
+        //        }
+        //        else if (ReportTitle.Trim() == "Late In Report" || ReportTitle.Trim() == "التأخير")
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Late In", "Time In", "Time Out", "Late", "Early", "Worked Hour", "Req Hour", "Missed Hour", "Extra Hour", "Schedule", "Comments", "Site" };
+        //        }
+        //        else if (ReportTitle.Trim() == "Early Out Report" || ReportTitle.Trim() == "الخروج المبكر")
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Time Out", "Early Out", "Schedule" };
+        //        }
+        //        else if (ReportTitle.Trim() == "Attendance Summary Report" || ReportTitle.Trim() == "ملخص الحضور و الانصراف")
+        //        {
+        //            ColmHeaders = new string[] { "BU","Department","Section","Number", "Name", "No. of Absent Day","No. of Unauthorized Absent", "No. of Holidays",
+        //                                               "No. of Late In", "Late In Hours","No. of Early Out" ,"Early Out Hours",   "Approved Leaves" ,
+        //                                               "Required Hours","Working Hours", "Missing Hours", "Extra Hours","Total Hours", "No. of Missed IN", "No. of Missed Out",
+        //                                               "No. of Personal Permissions","Personal Permissions Hours","No. of Official Permissions","Official Permissions Hours"};
+        //        }
+        //        else if (ReportTitle.Trim() == "Employee Details Report" || ReportTitle.Trim() == "بيانات الموظف")
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Join Date", "Status", "Designation" };
+        //        }
+        //        else if (ReportTitle.Trim() == "No Time IN Report")
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Schedule In", "Missing In", "Time In", "Time Out", "Late", "Early", "Worked Hour", "Req Hour", "Missed Hour", "Extra Hour", "Schedule", "Comments", "Site" };
+        //        }
+        //        else if (ReportTitle.Trim() == "No Time Out Report")
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Schedule Out", "Missing Out", "Time In", "Time Out", "Late", "Early", "Worked Hour", "Req Hour", "Missed Hour", "Extra Hour", "Schedule", "Comments", "Site" };
+        //        }
+        //        else if (ReportTitle.Trim().IndexOf("Permissions Report") != -1 || ReportTitle.Trim().IndexOf("تقرير الإذن") != -1)
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section",  "Number", "Name", "From Date", "To Date", "Permission Type", "From Time", "To Time","Permission Time", "Status", "Applied By",
+        //                        "Approved By",  "Total Official Permission Hours", "Total Personal Permission Hours"};
+        //        }
+        //        else if (ReportTitle.Trim().IndexOf("No Time In/Out Report") != -1 || ReportTitle.Trim().IndexOf("تقرير بدون حركة دخول/خروج") != -1)
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Schedule In", "Time In", "Schedule Out", "Missing Out" };
+        //        }
+        //        else if (ReportTitle.Trim().IndexOf("Employee Year Summary Report") != -1 || ReportTitle.Trim().IndexOf("تقرير الملخص السنوية الموظف ") != -1)
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Type", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Total" };
+        //        }
+        //        else if (ReportTitle.Trim() == "Employee Overtime Report" || ReportTitle.Trim() == "التقرير العمل الإضافي للموظف" || ReportTitle.Trim().IndexOf("Employee Extra Hours Report") != -1 ||
+        //                   ReportTitle.Trim().IndexOf("HR Overtime Report") != -1 || ReportTitle.Trim().IndexOf(" ساعة إضافية") != -1)
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Time In", "Time Out", "Extra Hours", "Overtime", "Total Extra Hours", "Total Overtime" };
+        //        }
+        //        else if (ReportTitle.Trim() == "Employee Deduction Report" || ReportTitle.Trim() == "التقرير المخالفات الموظف")
+        //        {
+        //            ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Shortage", "Violation In Hours", "Deduction Formula", "Deduction Amount", "Total Deduction" };
+        //        }
+        //        else if (ReportTitle.Trim() == "Total Movement Report")
+        //        {
+        //            ColmHeaders = new string[] { "Employee Code", "Name", "Department", "Job", "Site", "Total Lateness", "Total Absences", "Period" };
+        //        }
+        //        else if (ReportTitle.Trim() == "تقرير الحركة الإجمالي")
+        //        {
+        //            ColmHeaders = new string[] { "رمز الموظف", "اسم الموظف", "قسم", "مهنة", "موقع", "إجمالي التأخير", "مجموع الغياب", "فترة" };
+        //        }
+
+        //        for (int j = 0; j < ColmHeaders.Length; j++)
+        //        {      //write in new column
+        //            sb.Append("<tr><Td>");
+        //            //Get column headers  and make it as bold in excel columns
+        //            sb.Append("<B>");
+        //            sb.Append("<tr>"+ColmHeaders[j]+"</tr>");
+        //            sb.Append("</B>");
+        //            sb.Append("</Td></tr>");
+        //        }
+        //        HttpContext.Current.Response.Write("</TR>");
+        //        foreach (DataRow row in table.Rows)
+        //        {//write in new row
+
+        //            HttpContext.Current.Response.Write("<TR>");
+        //            for (int i = 0; i <= ColmHeaders.Length; i++)
+        //            {
+        //                if (table.Columns[i].ColumnName != "Column1")
+        //                {
+        //                    sb.Append("<Td style ='.text { mso-number-format; }'>");
+
+        //                    if (row[i].ToString().StartsWith("-") == true)
+        //                        sb.Append("'" + row[i] + "\r");
+        //                    else
+        //                        sb.Append((row[i] + " "));//.Replace("am", "").Replace("pm", ""));
+        //                                                  //HttpContext.Current.Response.Write((row[i] + " ").Replace("am", "").Replace("pm", ""));
+
+        //                    sb.Append("</Td>");
+        //                }
+        //            }
+        //            sb.Append("</TR>");
+        //        }
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //    }
+        //    return sb.ToString();
+        //}
         private void ExporttoExcel(DataTable table)
         {
-
             HttpContext.Current.Response.Clear();
             HttpContext.Current.Response.ClearContent();
             HttpContext.Current.Response.ClearHeaders();
             HttpContext.Current.Response.Buffer = true;
-            HttpContext.Current.Response.ContentType = "application/ms-excel";
+            //HttpContext.Current.Response.ContentType = "application/ms-excel";
+            HttpContext.Current.Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
             HttpContext.Current.Response.Write(@"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.0 Transitional//EN"">");
-            HttpContext.Current.Response.AddHeader("Content-Disposition", "attachment;filename=" + ReportTitle.Replace(" ", "").Trim() + ".xls");
-
+            HttpContext.Current.Response.AppendHeader("Content-Disposition", "attachment;filename=" + ReportTitle.Replace(" ", "").Trim() + ".xls");
             HttpContext.Current.Response.Charset = "utf-8";
             if (languagePostfix == "_arb")
                 HttpContext.Current.Response.ContentEncoding = System.Text.Encoding.GetEncoding("utf-8");
@@ -609,7 +1518,7 @@ namespace TAMSR2.Reports
             {
                 ColmHeaders = new string[]{"BU","Department","Section","Number","Name" ,"Date","Time In","Time Out","Late","Early","Worked Hours","Req. Hours", "Missed Hours"
                                              ,"Extra Hours","Schedule ","Comments" };//, "Total Late Hours","Total Early Hours","Total Missed Hours","Total Worked Hours","Total Required Hours",
-                                             //s"Total Extra Hours","Personal Out Hours","Business Out Hours","Total Leaves","Unauthorized Absent","Total Absent","Total Missed In/Out"};
+                                                                                     //s"Total Extra Hours","Personal Out Hours","Business Out Hours","Total Leaves","Unauthorized Absent","Total Absent","Total Missed In/Out"};
             }
             else if (ReportTitle.Trim() == "Employee Movements Report" || ReportTitle.Trim() == "دخول و خروج الموظف")
             {
@@ -617,11 +1526,11 @@ namespace TAMSR2.Reports
             }
             else if (ReportTitle.Trim() == "Absentees Report" || ReportTitle.Trim() == "الغياب")
             {
-                ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Day" ,  "Remarks" , "Time In" , "Time Out" , "Late" , "Early" , "Worked Hour" , "Req Hour" , "Missed Hour" , "Extra Hour" , "Schedule" , "Comments" , "Site" };
+                ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Day", "Remarks", "Time In", "Time Out", "Late", "Early", "Worked Hour", "Req Hour", "Missed Hour", "Extra Hour", "Schedule", "Comments", "Site" };
             }
             else if (ReportTitle.Trim() == "Late In Report" || ReportTitle.Trim() == "التأخير")
             {
-                ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Late In", "Time In" , "Time Out" , "Late" , "Early" , "Worked Hour" , "Req Hour" , "Missed Hour" , "Extra Hour" , "Schedule" , "Comments" , "Site" };
+                ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Late In", "Time In", "Time Out", "Late", "Early", "Worked Hour", "Req Hour", "Missed Hour", "Extra Hour", "Schedule", "Comments", "Site" };
             }
             else if (ReportTitle.Trim() == "Early Out Report" || ReportTitle.Trim() == "الخروج المبكر")
             {
@@ -629,10 +1538,10 @@ namespace TAMSR2.Reports
             }
             else if (ReportTitle.Trim() == "Attendance Summary Report" || ReportTitle.Trim() == "ملخص الحضور و الانصراف")
             {
-                ColmHeaders = new string[] { "BU","Department","Section","Number", "Name", "No. of Absent Day","No. of Unauthorized Absent", "No. of Holidays", 
-                                           "No. of Late In", "Late In Hours","No. of Early Out" ,"Early Out Hours",   "Approved Leaves" ,
-                                           "Required Hours","Working Hours", "Missing Hours", "Extra Hours","Total Hours", "No. of Missed IN", "No. of Missed Out",
-                                           "No. of Personal Permissions","Personal Permissions Hours","No. of Official Permissions","Official Permissions Hours"};
+                ColmHeaders = new string[] { "BU","Department","Section","Number", "Name", "No. of Absent Day","No. of Unauthorized Absent", "No. of Holidays",
+                                                       "No. of Late In", "Late In Hours","No. of Early Out" ,"Early Out Hours",   "Approved Leaves" ,
+                                                       "Required Hours","Working Hours", "Missing Hours", "Extra Hours","Total Hours", "No. of Missed IN", "No. of Missed Out",
+                                                       "No. of Personal Permissions","Personal Permissions Hours","No. of Official Permissions","Official Permissions Hours"};
             }
             else if (ReportTitle.Trim() == "Employee Details Report" || ReportTitle.Trim() == "بيانات الموظف")
             {
@@ -640,17 +1549,17 @@ namespace TAMSR2.Reports
             }
             else if (ReportTitle.Trim() == "No Time IN Report")
             {
-                ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Schedule In", "Missing In", "Time In" , "Time Out" , "Late" , "Early" , "Worked Hour" , "Req Hour" , "Missed Hour" , "Extra Hour" , "Schedule" , "Comments" , "Site" };
+                ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Schedule In", "Missing In", "Time In", "Time Out", "Late", "Early", "Worked Hour", "Req Hour", "Missed Hour", "Extra Hour", "Schedule", "Comments", "Site" };
             }
             else if (ReportTitle.Trim() == "No Time Out Report")
             {
-                ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Schedule Out", "Missing Out" , "Time In" , "Time Out" , "Late" , "Early" , "Worked Hour" , "Req Hour" , "Missed Hour" , "Extra Hour" , "Schedule" , "Comments" , "Site" };
-            } 
+                ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Schedule Out", "Missing Out", "Time In", "Time Out", "Late", "Early", "Worked Hour", "Req Hour", "Missed Hour", "Extra Hour", "Schedule", "Comments", "Site" };
+            }
             else if (ReportTitle.Trim().IndexOf("Permissions Report") != -1 || ReportTitle.Trim().IndexOf("تقرير الإذن") != -1)
             {
-                ColmHeaders = new string[] { "BU", "Department", "Section",  "Number", "Name", "From Date", "To Date", "Permission Type", "From Time", "To Time","Permission Time", "Status", "Applied By", 
-                    "Approved By",  "Total Official Permission Hours", "Total Personal Permission Hours"};
-            } 
+                ColmHeaders = new string[] { "BU", "Department", "Section",  "Number", "Name", "From Date", "To Date", "Permission Type", "From Time", "To Time","Permission Time", "Status", "Applied By",
+                                "Approved By",  "Total Official Permission Hours", "Total Personal Permission Hours"};
+            }
             else if (ReportTitle.Trim().IndexOf("No Time In/Out Report") != -1 || ReportTitle.Trim().IndexOf("تقرير بدون حركة دخول/خروج") != -1)
             {
                 ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Schedule In", "Time In", "Schedule Out", "Missing Out" };
@@ -662,7 +1571,7 @@ namespace TAMSR2.Reports
             else if (ReportTitle.Trim() == "Employee Overtime Report" || ReportTitle.Trim() == "التقرير العمل الإضافي للموظف" || ReportTitle.Trim().IndexOf("Employee Extra Hours Report") != -1 ||
                        ReportTitle.Trim().IndexOf("HR Overtime Report") != -1 || ReportTitle.Trim().IndexOf(" ساعة إضافية") != -1)
             {
-                ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Time In", "Time Out", "Extra Hours","Overtime","Total Extra Hours","Total Overtime" };
+                ColmHeaders = new string[] { "BU", "Department", "Section", "Number", "Name", "Date", "Time In", "Time Out", "Extra Hours", "Overtime", "Total Extra Hours", "Total Overtime" };
             }
             else if (ReportTitle.Trim() == "Employee Deduction Report" || ReportTitle.Trim() == "التقرير المخالفات الموظف")
             {
@@ -670,16 +1579,13 @@ namespace TAMSR2.Reports
             }
             else if (ReportTitle.Trim() == "Total Movement Report")
             {
-                ColmHeaders = new string[] { "Employee Code", "Name", "Department", "Job", "Site", "Total Lateness", "Total Absences", "Period"};
+                ColmHeaders = new string[] { "Employee Code", "Name", "Department", "Job", "Site", "Total Lateness", "Total Absences", "Period" };
             }
-            else if(ReportTitle.Trim() == "تقرير الحركة الإجمالي")
+            else if (ReportTitle.Trim() == "تقرير الحركة الإجمالي")
             {
                 ColmHeaders = new string[] { "رمز الموظف", "اسم الموظف", "قسم", "مهنة", "موقع", "إجمالي التأخير", "مجموع الغياب", "فترة" };
             }
-
-
             int w = 0;
-
             try
             {
 
@@ -699,14 +1605,7 @@ namespace TAMSR2.Reports
                     HttpContext.Current.Response.Write("<TR>");
                     for (int i = 0; i <= ColmHeaders.Length; i++)
                     {
-                        if (table.Columns[i].ColumnName != "Column1" 
-                            //&& ((ReportTitle.Trim().IndexOf("Daily Movement Report") != -1 || ReportTitle.Trim().IndexOf("التقرير اليومى") != -1)
-                            //|| (ReportTitle.Trim().IndexOf("Employee Year Summary Report") != -1 || ReportTitle.Trim().IndexOf("تقرير الملخص السنوية الموظف ") != -1)
-                            //|| (ReportTitle.Trim() == "Attendance Summary Report" || ReportTitle.Trim() == "ملخص الحضور و الانصراف")
-                            //|| (ReportTitle.Trim().IndexOf("No Time In/Out Report") != -1 || ReportTitle.Trim().IndexOf("تقرير بدون حركة دخول/خروج") != -1)
-                            //|| (ReportTitle.Trim() == "Absentees Report" || ReportTitle.Trim() == "الغياب")
-                            //   )
-                            )
+                        if (table.Columns[i].ColumnName != "Column1")
                         {
                             HttpContext.Current.Response.Write("<Td style ='.text { mso-number-format; }'>");
 
@@ -714,7 +1613,7 @@ namespace TAMSR2.Reports
                                 HttpContext.Current.Response.Write("'" + row[i] + "\r");
                             else
                                 HttpContext.Current.Response.Write((row[i] + " "));//.Replace("am", "").Replace("pm", ""));
-                            //HttpContext.Current.Response.Write((row[i] + " ").Replace("am", "").Replace("pm", ""));
+                                                                                   //HttpContext.Current.Response.Write((row[i] + " ").Replace("am", "").Replace("pm", ""));
 
                             HttpContext.Current.Response.Write("</Td>");
                         }
@@ -725,15 +1624,13 @@ namespace TAMSR2.Reports
             }
             catch (Exception ex)
             {
-                 
+
             }
             HttpContext.Current.Response.Write("</Table>");
-            HttpContext.Current.Response.Write("</font>");  
+            HttpContext.Current.Response.Write("</font>");
             HttpContext.Current.Response.Flush();
             HttpContext.Current.Response.End();
         }
- 
-
         private void ReportLogOn()
         {
 

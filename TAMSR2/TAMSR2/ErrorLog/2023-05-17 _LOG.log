@@ -1,0 +1,40 @@
+<LogEntry>
+  <Date>5/17/2023 5:16:24 PM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\ViewRptRosterView.aspx.cs:line 117</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/17/2023 5:37:47 PM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\ViewRptRosterView.aspx.cs:line 117</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/17/2023 6:11:25 PM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\ViewRptRosterView.aspx.cs:line 117</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/17/2023 6:15:12 PM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\ViewRptRosterView.aspx.cs:line 117</Stack>
+  </Exception>
+</LogEntry>

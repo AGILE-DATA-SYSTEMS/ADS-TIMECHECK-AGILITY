@@ -1,0 +1,156 @@
+<LogEntry>
+  <Date>5/18/2023 10:34:20 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\ViewRptRosterView.aspx.cs:line 117</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 10:48:46 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\ViewRptRosterView.aspx.cs:line 117</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 10:48:49 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\ViewRptRosterView.aspx.cs:line 117</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 11:10:35 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\ViewRptRosterView.aspx.cs:line 117</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 11:12:30 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\ViewRptRosterView.aspx.cs:line 117</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 11:16:23 AM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>8114</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Error converting data type nvarchar to numeric.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean&amp; moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean&amp; more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 11:16:24 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport()</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 11:16:31 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport()</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 11:22:54 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport()</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 11:23:01 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Thread was being aborted.</Message>
+    <Stack>   at TAMSR2.Reports.RosterReport1.ShowRosterReport()</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 11:31:10 AM</Date>
+  <Exception>
+    <Module>SqlDatabase.ExecuteProcedure() failed, SqlException Occurred</Module>
+    <ErrorNumber>8114</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Error converting data type nvarchar to numeric.</Message>
+    <Stack>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean&amp; moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean&amp; more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.ExecuteProcedure(String strProcedure, Hashtable htParameters) in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 202</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 11:31:12 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Unable to cast object of type 'FileStreamDeleteOnClose' to type 'System.IO.MemoryStream'.</Message>
+    <Stack>   at TAMSR2.Reports.ViewRptRosterView.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\ViewRptRosterView.aspx.cs:line 117</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/18/2023 11:31:20 AM</Date>
+  <Exception>
+    <Module>Reports/RosterReport.aspx.ShowRosterReport()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2</Source>
+    <Message>Thread was being aborted.</Message>
+    <Stack>   at TAMSR2.Reports.RosterReport1.ShowRosterReport() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\Reports\RosterReport.aspx.cs:line 163</Stack>
+  </Exception>
+</LogEntry>

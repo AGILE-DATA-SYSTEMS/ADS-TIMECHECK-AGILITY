@@ -41,3 +41,9 @@ C:\WorkSpace\WorkSpace\ADS-TIMECHECK-DGF\TAMSR2Framework\TAMSR2Framework\obj\Deb
 C:\WorkSpace\WorkSpace\ADS-TIMECHECK-DGF\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csproj.CoreCompileInputs.cache
 C:\WorkSpace\WorkSpace\ADS-TIMECHECK-DGF\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.dll
 C:\WorkSpace\WorkSpace\ADS-TIMECHECK-DGF\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.pdb
+C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.dll
+C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\bin\Debug\TAMSR2Framework.pdb
+C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csproj.AssemblyReference.cache
+C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.csproj.CoreCompileInputs.cache
+C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.dll
+C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\obj\Debug\TAMSR2Framework.pdb
