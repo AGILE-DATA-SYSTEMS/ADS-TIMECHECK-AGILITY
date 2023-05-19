@@ -611,6 +611,8 @@ namespace TAMSR2.Reports
                 textCell.Value = toDate;
                 if (ReportTitle.Trim().IndexOf("Daily Movement Report") != -1 || ReportTitle.Trim().IndexOf("التقرير اليومى") != -1)
                 {
+                    //var blankhead = worksheet.Cell(4, 1);
+                    //blankhead.Value = "";
                     var firstHead = worksheet.Cell(4, 1);
                     firstHead.Value = "BU";
                     firstHead.Style.Font.Bold = true;
@@ -666,7 +668,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 16; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -691,23 +693,35 @@ namespace TAMSR2.Reports
 
                 else if (ReportTitle.Trim() == "Employee Movements Report" || ReportTitle.Trim() == "دخول و خروج الموظف")
                 {
-                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
-                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
-                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
-                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
-                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
-                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
-                    var seventhHead = worksheet.Cell(4, 7).Value = "Time";
-                    var eighthHead = worksheet.Cell(4, 8).Value = "Trans Mode";
-                    var ninethHead = worksheet.Cell(4, 9).Value = "Device";
-                    var tenthHead = worksheet.Cell(4, 10).Value = "Comments";
+                    var firstHead = worksheet.Cell(4, 1); 
+                    firstHead.Value = "BU";
+                    firstHead.Style.Font.Bold = true;
+                    var secondHead = worksheet.Cell(4, 2); 
+                    secondHead.Value = "Department";
+                    secondHead.Style.Font.Bold = true;
+                    var thirdHead = worksheet.Cell(4, 3);
+                    thirdHead.Value = "Section";
+                    var forthHead = worksheet.Cell(4, 4); 
+                    forthHead.Value = "Number";
+                    var fifthHead = worksheet.Cell(4, 5);
+                    fifthHead.Value = "Name";
+                    var sixthHead = worksheet.Cell(4, 6);
+                    sixthHead.Value = "Date";
+                    var seventhHead = worksheet.Cell(4, 7);
+                    seventhHead.Value = "Time";
+                    var eighthHead = worksheet.Cell(4, 8);
+                    eighthHead.Value = "Trans Mode";
+                    var ninethHead = worksheet.Cell(4, 9);
+                    ninethHead.Value = "Device";
+                    var tenthHead = worksheet.Cell(4, 10);
+                    tenthHead.Value = "Comments";
                     try
                     {
                         int rowIndex = 5;
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 10; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -731,7 +745,8 @@ namespace TAMSR2.Reports
                 }
                 else if (ReportTitle.Trim() == "Absentees Report" || ReportTitle.Trim() == "الغياب")
                 {
-                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    var firstHead = worksheet.Cell(4, 1);
+                        firstHead.Value = "BU";
                     var secondHead = worksheet.Cell(4, 2).Value = "Department";
                     var thirdHead = worksheet.Cell(4, 3).Value = "Section";
                     var forthHead = worksheet.Cell(4, 4).Value = "Number";
@@ -756,7 +771,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 19; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -805,7 +820,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 18; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -845,7 +860,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 9; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -899,7 +914,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 24; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -937,7 +952,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 8; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -986,7 +1001,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 19; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -1035,7 +1050,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 19; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -1081,7 +1096,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 16; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -1121,7 +1136,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 10; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -1170,7 +1185,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 19; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -1213,7 +1228,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 12; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -1254,7 +1269,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 11; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -1292,7 +1307,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 8; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -1330,7 +1345,7 @@ namespace TAMSR2.Reports
                         foreach (DataRow row in dt.Rows)
                         {
                             //Here work
-                            for (int i = 0; i <= 16; i++)
+                            for (int i = 0; i < 8; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
@@ -1459,7 +1474,7 @@ namespace TAMSR2.Reports
         //        {//write in new row
 
         //            HttpContext.Current.Response.Write("<TR>");
-        //            for (int i = 0; i <= ColmHeaders.Length; i++)
+        //            for (int i = 0; i < ColmHeaders.Length; i++)
         //            {
         //                if (table.Columns[i].ColumnName != "Column1")
         //                {
@@ -1603,7 +1618,7 @@ namespace TAMSR2.Reports
                 {//write in new row
 
                     HttpContext.Current.Response.Write("<TR>");
-                    for (int i = 0; i <= ColmHeaders.Length; i++)
+                    for (int i = 0; i < ColmHeaders.Length; i++)
                     {
                         if (table.Columns[i].ColumnName != "Column1")
                         {

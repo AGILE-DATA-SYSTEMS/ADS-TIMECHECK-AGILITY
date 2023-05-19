@@ -436,7 +436,7 @@
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub-menu" style="display: none;">
-                        <li id='liRosterView'><a href='<%= Page.ResolveClientUrl("~/Reports/Generate-Roster-View") %>'><%= Resources.Resource.rosterView %> </a></li>
+                        <!--<li id='liRosterView'><a href='<%= Page.ResolveClientUrl("~/Reports/Generate-Roster-View") %>'><%= Resources.Resource.rosterView %> </a></li>-->
                         <li id='liRosterReport'><a href='<%= Page.ResolveClientUrl("~/Reports/Generate-Roster-Report") %>'><%= Resources.Resource.monthlyRoster %> </a></li>
                     </ul>
                 </li>
