@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TAMSR2.Reports {
-    
-    
-    public partial class ViewRosterReport {
+namespace TAMSR2.Reports
+{
+
+
+    public partial class ViewRosterReport
+    {
     }
 }

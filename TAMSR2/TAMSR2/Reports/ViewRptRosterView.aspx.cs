@@ -130,7 +130,7 @@ namespace TAMSR2.Reports
                     Response.ClearHeaders();
                     Response.ClearContent();
                     Response.Buffer = true;
-                    rpt.ExportToHttpResponse(ExportFormatType.Excel, Response, true, SaveReportName);
+                    rpt.ExportToHttpResponse(ExportFormatType.XLSXRecord, Response, true, SaveReportName);
 
                     Session["Report"] = rpt;
                     return;

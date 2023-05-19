@@ -32,6 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../Assets/<%= languageStr %>/plugins/bootstrap-colorpicker/css/colorpicker.css" />
     <link rel="stylesheet" type="text/css" href="../Assets/<%= languageStr %>/plugins/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" />
     <link rel="stylesheet" type="text/css" href="../Assets/<%= languageStr %>/plugins/bootstrap-daterangepicker/daterangepicker.css" />
+    <script src="<%= path %>assets/<%= languageStr %>/scripts/xlsx.full.min.js"></script>
 
     <style>
         .form-actions.nopadding {
@@ -369,7 +370,15 @@
                 </div>
             </div>
 
+            <table  border='1' bgColor='#ffffff'  borderColor='#000000' cellSpacing='0' cellPadding='0'  style='display:none;font-size:10.0pt; font-family:Calibri; background:white;' class="table table-hover" id="tabletoexcel">
+                <thead>
 
+                    <tr>
+                        <td>&nbsp</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+             </table>
             <!-- END PAGE CONTENT-->
 
             <!-- END PAGE CONTAINER-->
@@ -664,8 +673,39 @@
                 window.open('ViewStandardRptPage.aspx?' + d, '_blank', 'height=' + screen.height + ',width=' + screen.width + 'toolbar=0,scrollbars=1,location=0,menubar=0,resizable=yes');
             }
             else if (action == 'ExcelDownload') {
-                window.location = 'ViewStandardRptPage.aspx?' + d + "&format=" + format;
+                window.open('ViewStandardRptPage.aspx?' + d + "&format=" + format);
+               <%-- $.ajax({
+                    url: '<%= Page.ResolveClientUrl("/Reports/ViewStandardRptPage.aspx?" ) %>' + d + "&format=" + format,
+                    type: 'POST',
+                    success: function (data) {
+                      alert(data);
+                        $("#tabletoexcel tbody").html(data);
+                        var wb = XLSX.utils.table_to_book(document.querySelector('table#tabletoexcel'), { sheet: "MovementReport" });
+                        var wbout = XLSX.write(wb, { bookType: 'xlsx', bookSST: true, type: 'binary' });
 
+                        function s2ab(s) {
+                            var buf = new ArrayBuffer(s.length);
+                            var view = new Uint8Array(buf);
+                            for (var i = 0; i < s.length; i++) view[i] = s.charCodeAt(i) & 0xFF;
+                            return buf;
+                        }
+
+                        var blob = new Blob([s2ab(wbout)], { type: "application/octet-stream" });
+                        var url = URL.createObjectURL(blob);
+
+                        var link = document.createElement("a");
+                        link.setAttribute("href", url);
+                        link.setAttribute("download", "MovementReport.xlsx");
+                        link.style.visibility = 'hidden';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    }
+                    //error: function () {
+                    //    alert('Error downloading file');
+                    //}
+                });--%>
+                
             }
             else if (action == 'WordDownload') {
                 window.location = 'ViewStandardRptPage.aspx?' + d;
@@ -684,7 +724,7 @@
                 type: 'POST',
                 data: d,
                 success: function (html) {
-
+                    alert(html);
                     $("#form_1").unmask();
                     if (action == 'ViewReport') {
                         window.open('../Reports/ViewStandardReports.aspx?Key=viewreport', '_blank', 'height=' + screen.height + ',width=' + screen.width + 'toolbar=0,scrollbars=1,location=0,menubar=0,resizable=yes');

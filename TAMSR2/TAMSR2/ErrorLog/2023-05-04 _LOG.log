@@ -1,0 +1,275 @@
+<LogEntry>
+  <Date>5/4/2023 10:46:20 AM</Date>
+  <Exception>
+    <Module>SqlDatabase.Open() failed, SqlException Occurred</Module>
+    <ErrorNumber>4060</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Cannot open database "TIME_MAIN_DGF" requested by the login. The login failed.
+Login failed for user 'sa'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/4/2023 10:46:20 AM</Date>
+  <Exception>
+    <Module>RequestPages/UserPage.aspx.CompanyLogin()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.Open() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 104
+   at TAMSR2Framework.TAMSR2Data.OpenConnection(String strConnEncrypted) in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\TAMSR2Data.cs:line 121
+   at TAMSR2.RequestPages.UserPage.CompanyLoginByCode() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\RequestPages\UserPage.aspx.cs:line 453</Stack>
+    <InnerException>
+      <Module>RequestPages/UserPage.aspx.CompanyLogin()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Cannot open database "TIME_MAIN_DGF" requested by the login. The login failed.
+Login failed for user 'sa'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/4/2023 10:46:37 AM</Date>
+  <Exception>
+    <Module>SqlDatabase.Open() failed, SqlException Occurred</Module>
+    <ErrorNumber>4060</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Cannot open database "TIME_MAIN_DGF" requested by the login. The login failed.
+Login failed for user 'sa'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/4/2023 10:46:37 AM</Date>
+  <Exception>
+    <Module>RequestPages/UserPage.aspx.CompanyLogin()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.Open() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 104
+   at TAMSR2Framework.TAMSR2Data.OpenConnection(String strConnEncrypted) in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\TAMSR2Data.cs:line 121
+   at TAMSR2.RequestPages.UserPage.CompanyLoginByCode() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\RequestPages\UserPage.aspx.cs:line 453</Stack>
+    <InnerException>
+      <Module>RequestPages/UserPage.aspx.CompanyLogin()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Cannot open database "TIME_MAIN_DGF" requested by the login. The login failed.
+Login failed for user 'sa'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/4/2023 11:20:20 AM</Date>
+  <Exception>
+    <Module>SqlDatabase.Open() failed, SqlException Occurred</Module>
+    <ErrorNumber>4060</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Cannot open database "TIME_MAIN_DGF" requested by the login. The login failed.
+Login failed for user 'sa'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/4/2023 11:20:20 AM</Date>
+  <Exception>
+    <Module>RequestPages/UserPage.aspx.CompanyLogin()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.Open() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 104
+   at TAMSR2Framework.TAMSR2Data.OpenConnection(String strConnEncrypted) in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\TAMSR2Data.cs:line 121
+   at TAMSR2.RequestPages.UserPage.CompanyLoginByCode() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\RequestPages\UserPage.aspx.cs:line 453</Stack>
+    <InnerException>
+      <Module>RequestPages/UserPage.aspx.CompanyLogin()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Cannot open database "TIME_MAIN_DGF" requested by the login. The login failed.
+Login failed for user 'sa'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/4/2023 11:20:35 AM</Date>
+  <Exception>
+    <Module>SqlDatabase.Open() failed, SqlException Occurred</Module>
+    <ErrorNumber>4060</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Cannot open database "TIME_MAIN_DGF" requested by the login. The login failed.
+Login failed for user 'sa'.</Message>
+    <Stack>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/4/2023 11:20:35 AM</Date>
+  <Exception>
+    <Module>RequestPages/UserPage.aspx.CompanyLogin()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.Open() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 104
+   at TAMSR2Framework.TAMSR2Data.OpenConnection(String strConnEncrypted) in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\TAMSR2Data.cs:line 121
+   at TAMSR2.RequestPages.UserPage.CompanyLoginByCode() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\RequestPages\UserPage.aspx.cs:line 453</Stack>
+    <InnerException>
+      <Module>RequestPages/UserPage.aspx.CompanyLogin()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Cannot open database "TIME_MAIN_DGF" requested by the login. The login failed.
+Login failed for user 'sa'.</Message>
+      <Stack>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/4/2023 11:20:42 AM</Date>
+  <Exception>
+    <Module>SqlDatabase.Open() failed, SqlException Occurred</Module>
+    <ErrorNumber>4060</ErrorNumber>
+    <Source>.Net SqlClient Data Provider</Source>
+    <Message>Cannot open database "TIME_MAIN_DGF" requested by the login. The login failed.
+Login failed for user 'sa'.</Message>
+    <Stack>   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+  </Exception>
+</LogEntry>
+<LogEntry>
+  <Date>5/4/2023 11:20:42 AM</Date>
+  <Exception>
+    <Module>RequestPages/UserPage.aspx.CompanyLogin()</Module>
+    <ErrorNumber>0</ErrorNumber>
+    <Source>TAMSR2Framework</Source>
+    <Message>SqlDatabase.Open() failed, SqlException Occurred</Message>
+    <Stack>   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 104
+   at TAMSR2Framework.TAMSR2Data.OpenConnection(String strConnEncrypted) in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\TAMSR2Data.cs:line 121
+   at TAMSR2.RequestPages.UserPage.CompanyLoginByCode() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2\TAMSR2\RequestPages\UserPage.aspx.cs:line 453</Stack>
+    <InnerException>
+      <Module>RequestPages/UserPage.aspx.CompanyLogin()</Module>
+      <ErrorNumber>0</ErrorNumber>
+      <Source>.Net SqlClient Data Provider</Source>
+      <Message>Cannot open database "TIME_MAIN_DGF" requested by the login. The login failed.
+Login failed for user 'sa'.</Message>
+      <Stack>   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TAMSR2Framework.DAL.SqlDatabase.TAMSR2Framework.DAL.IConnectable.Open() in C:\Workspace\Projects\ADS-TIMECHECK-AGILITY\TAMSR2Framework\TAMSR2Framework\DAL\SqlDatabase.cs:line 98</Stack>
+    </InnerException>
+  </Exception>
+</LogEntry>

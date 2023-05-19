@@ -128,14 +128,22 @@ namespace TAMSR2.Reports
                 string Key = Request["key"].ToString().ToLower();
                 if (Key == "viewreport")
                 {
-                    System.IO.MemoryStream oStream = (System.IO.MemoryStream)rpt.ExportToStream(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat);
-                    Response.Clear();
-                    Response.Buffer = true;
-                    Response.ContentType = "application/pdf";
-                    Response.BinaryWrite(oStream.ToArray());
-                    Response.End();
-                    Session["Report"] = rpt;
-
+                    try
+                    {
+                        byte[] byteArray = null;
+                        System.IO.Stream oStream = (System.IO.Stream)rpt.ExportToStream(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat);
+                        byteArray = new byte[oStream.Length];
+                        oStream.Read(byteArray, 0, Convert.ToInt32(oStream.Length - 1));
+                        Response.Clear();
+                        Response.Buffer = true;
+                        Response.ContentType = "application/pdf";
+                        Response.BinaryWrite(byteArray);
+                        Response.End();
+                    }
+                    catch (Exception ex)
+                    {
+                        Elmah.ErrorLog.GetDefault(HttpContext.Current).Log(new Elmah.Error(ex));
+                    }
                 }
                 else if (Key == "excel")
                 {
@@ -144,11 +152,12 @@ namespace TAMSR2.Reports
                     Response.ClearHeaders();
                     Response.ClearContent();
                     Response.Buffer = true;
-                    rpt.ExportToHttpResponse(ExportFormatType.Excel, Response, true, SaveReportName);
+                    rpt.ExportToHttpResponse(ExportFormatType.XLSXRecord, Response, true, SaveReportName);
 
                     Session["Report"] = rpt;
                     return;
                     // Response.Redirect("../Reports/ReportWizard.aspx");
+
                 }
                 else if (Key == "word")
                 {
