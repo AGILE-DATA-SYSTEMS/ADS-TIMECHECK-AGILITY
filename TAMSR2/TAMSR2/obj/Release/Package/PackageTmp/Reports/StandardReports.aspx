@@ -724,7 +724,7 @@
                 type: 'POST',
                 data: d,
                 success: function (html) {
-                    alert(html);
+                    //alert(html);
                     $("#form_1").unmask();
                     if (action == 'ViewReport') {
                         window.open('../Reports/ViewStandardReports.aspx?Key=viewreport', '_blank', 'height=' + screen.height + ',width=' + screen.width + 'toolbar=0,scrollbars=1,location=0,menubar=0,resizable=yes');

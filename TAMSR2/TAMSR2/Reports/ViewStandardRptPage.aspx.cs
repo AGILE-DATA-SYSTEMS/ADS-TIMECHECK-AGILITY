@@ -17,6 +17,7 @@ using TAMSR2Framework;
 using TAMSR2Framework.DAL;
 using ClosedXML.Excel;
 using System.Text;
+using System.Globalization;
 
 namespace TAMSR2.Reports
 {
@@ -667,12 +668,16 @@ namespace TAMSR2.Reports
                         int rowIndex = 5;
                         foreach (DataRow row in dt.Rows)
                         {
-                            //Here work
                             for (int i = 0; i < 16; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
                                 {
-                                    if (row[i].ToString().StartsWith("-") == true)
+                                    if (dt.Columns[i].ColumnName == "column4") // Assuming Column4 contains the date value
+                                    {
+                                        string dateValue = row[i].ToString();
+                                        worksheet.Cell(rowIndex, i + 1).Value = $"'{dateValue}\r";
+                                    }
+                                    else if (row[i].ToString().StartsWith("-"))
                                     {
                                         worksheet.Cell(rowIndex, i + 1).Value = "'" + row[i] + "\r";
                                     }
@@ -746,25 +751,99 @@ namespace TAMSR2.Reports
                 else if (ReportTitle.Trim() == "Absentees Report" || ReportTitle.Trim() == "الغياب")
                 {
                     var firstHead = worksheet.Cell(4, 1);
-                        firstHead.Value = "BU";
-                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
-                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
-                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
-                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
-                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
-                    var seventhHead = worksheet.Cell(4, 7).Value = "Day";
-                    var eighthHead = worksheet.Cell(4, 8).Value = "Remarks";
-                    var ninethHead = worksheet.Cell(4, 9).Value = "Time In";
-                    var tenthHead = worksheet.Cell(4, 10).Value = "Time Out";
-                    var eleventhHead = worksheet.Cell(4, 11).Value = "Late";
-                    var twelvethHead = worksheet.Cell(4, 12).Value = "Early";
-                    var thirteenthHead = worksheet.Cell(4, 13).Value = "Worked Hours";
-                    var forteenthHead = worksheet.Cell(4, 14).Value = "Req Hours";
-                    var fifteenthHead = worksheet.Cell(4, 15).Value = "Missed Hours";
-                    var sixteenthHead = worksheet.Cell(4, 16).Value = "Extra Hours";
-                    var seventeenthHead = worksheet.Cell(4, 17).Value = "Schedule";
-                    var eightteenthHead = worksheet.Cell(4, 18).Value = "Comments";
-                    var ninteenthHead = worksheet.Cell(4, 19).Value = "Site";
+                    firstHead.Value = "BU";
+                    firstHead.Style.Font.Bold = true;
+
+                    var secondHead = worksheet.Cell(4, 2);
+                    secondHead.Value = "Department";
+                    secondHead.Style.Font.Bold = true;
+
+                    var thirdHead = worksheet.Cell(4, 3);
+                    thirdHead.Value = "Section";
+                    thirdHead.Style.Font.Bold = true;
+
+                    // Continue the same pattern for the remaining cells
+                    var forthHead = worksheet.Cell(4, 4);
+                    forthHead.Value = "Number";
+                    forthHead.Style.Font.Bold = true;
+
+                    var fifthHead = worksheet.Cell(4, 5);
+                    fifthHead.Value = "Name";
+                    fifthHead.Style.Font.Bold = true;
+
+                    var sixthHead = worksheet.Cell(4, 6);
+                    sixthHead.Value = "Date";
+                    sixthHead.Style.Font.Bold = true;
+
+                    var seventhHead = worksheet.Cell(4, 7);
+                    seventhHead.Value = "Day";
+                    seventhHead.Style.Font.Bold = true;
+
+                    var eighthHead = worksheet.Cell(4, 8);
+                    eighthHead.Value = "Remarks";
+                    eighthHead.Style.Font.Bold = true;
+
+                    var ninethHead = worksheet.Cell(4, 9);
+                    ninethHead.Value = "Time In";
+                    ninethHead.Style.Font.Bold = true;
+
+                    var tenthHead = worksheet.Cell(4, 10);
+                    tenthHead.Value = "Time Out";
+                    tenthHead.Style.Font.Bold = true;
+
+                    var eleventhHead = worksheet.Cell(4, 11);
+                    eleventhHead.Value = "Late";
+                    eleventhHead.Style.Font.Bold = true;
+
+                    var twelvethHead = worksheet.Cell(4, 12);
+                    twelvethHead.Value = "Early";
+                    twelvethHead.Style.Font.Bold = true;
+
+                    var thirteenthHead = worksheet.Cell(4, 13);
+                    thirteenthHead.Value = "Worked Hours";
+                    thirteenthHead.Style.Font.Bold = true;
+
+                    var forteenthHead = worksheet.Cell(4, 14);
+                    forteenthHead.Value = "Req Hours";
+                    forteenthHead.Style.Font.Bold = true;
+
+                    var fifteenthHead = worksheet.Cell(4, 15);
+                    fifteenthHead.Value = "Missed Hours";
+                    fifteenthHead.Style.Font.Bold = true;
+
+                    var sixteenthHead = worksheet.Cell(4, 16);
+                    sixteenthHead.Value = "Extra Hours";
+                    sixteenthHead.Style.Font.Bold = true;
+
+                    var seventeenthHead = worksheet.Cell(4, 17);
+                    seventeenthHead.Value = "Schedule";
+                    seventeenthHead.Style.Font.Bold = true;
+
+                    var eightteenthHead = worksheet.Cell(4, 18);
+                    eightteenthHead.Value = "Comments";
+                    eightteenthHead.Style.Font.Bold = true;
+
+                    var ninteenthHead = worksheet.Cell(4, 19);
+                    ninteenthHead.Value = "Site";
+                    ninteenthHead.Style.Font.Bold = true;
+                    //var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    //var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    //var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    //var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    //var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    //var seventhHead = worksheet.Cell(4, 7).Value = "Day";
+                    //var eighthHead = worksheet.Cell(4, 8).Value = "Remarks";
+                    //var ninethHead = worksheet.Cell(4, 9).Value = "Time In";
+                    //var tenthHead = worksheet.Cell(4, 10).Value = "Time Out";
+                    //var eleventhHead = worksheet.Cell(4, 11).Value = "Late";
+                    //var twelvethHead = worksheet.Cell(4, 12).Value = "Early";
+                    //var thirteenthHead = worksheet.Cell(4, 13).Value = "Worked Hours";
+                    //var forteenthHead = worksheet.Cell(4, 14).Value = "Req Hours";
+                    //var fifteenthHead = worksheet.Cell(4, 15).Value = "Missed Hours";
+                    //var sixteenthHead = worksheet.Cell(4, 16).Value = "Extra Hours";
+                    //var seventeenthHead = worksheet.Cell(4, 17).Value = "Schedule";
+                    //var eightteenthHead = worksheet.Cell(4, 18).Value = "Comments";
+                    //var ninteenthHead = worksheet.Cell(4, 19).Value = "Site";
                     try
                     {
                         int rowIndex = 5;
@@ -796,30 +875,84 @@ namespace TAMSR2.Reports
                 }
                 else if (ReportTitle.Trim() == "Late In Report" || ReportTitle.Trim() == "التأخير")
                 {
-                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
-                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
-                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
-                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
-                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
-                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
-                    var seventhHead = worksheet.Cell(4, 7).Value = "Late In";
-                    var eighthHead = worksheet.Cell(4, 8).Value = "Time In";
-                    var ninethHead = worksheet.Cell(4, 9).Value = "Time Out";
-                    var tenthHead = worksheet.Cell(4, 10).Value = "Late";
-                    var eleventhHead = worksheet.Cell(4, 11).Value = "Early";
-                    var twelvethHead = worksheet.Cell(4, 12).Value = "Worked Hour";
-                    var thirteenthHead = worksheet.Cell(4, 13).Value = "Req Hours";
-                    var forteenthHead = worksheet.Cell(4, 14).Value = "Missed Hours";
-                    var fifteenthHead = worksheet.Cell(4, 15).Value = "Extra Hours";
-                    var sixteenthHead = worksheet.Cell(4, 16).Value = "Schedule";
-                    var seventeenthHead = worksheet.Cell(4, 17).Value = "Comments";
-                    var eightteenthHead = worksheet.Cell(4, 18).Value = "Site";
+                    var firstHead = worksheet.Cell(4, 1);
+                    firstHead.Value = "BU";
+                    firstHead.Style.Font.Bold = true;
+
+                    var secondHead = worksheet.Cell(4, 2);
+                    secondHead.Value = "Department";
+                    secondHead.Style.Font.Bold = true;
+
+                    var thirdHead = worksheet.Cell(4, 3);
+                    thirdHead.Value = "Section";
+                    thirdHead.Style.Font.Bold = true;
+
+                    // Continue the same pattern for the remaining cells
+                    var forthHead = worksheet.Cell(4, 4);
+                    forthHead.Value = "Number";
+                    forthHead.Style.Font.Bold = true;
+
+                    var fifthHead = worksheet.Cell(4, 5);
+                    fifthHead.Value = "Name";
+                    fifthHead.Style.Font.Bold = true;
+
+                    var sixthHead = worksheet.Cell(4, 6);
+                    sixthHead.Value = "Date";
+                    sixthHead.Style.Font.Bold = true;
+
+                    var seventhHead = worksheet.Cell(4, 7);
+                    seventhHead.Value = "Late In";
+                    seventhHead.Style.Font.Bold = true;
+
+                    var eighthHead = worksheet.Cell(4, 8);
+                    eighthHead.Value = "Time In";
+                    eighthHead.Style.Font.Bold = true;
+
+                    var ninethHead = worksheet.Cell(4, 9);
+                    ninethHead.Value = "Time Out";
+                    ninethHead.Style.Font.Bold = true;
+
+                    var tenthHead = worksheet.Cell(4, 10);
+                    tenthHead.Value = "Late";
+                    tenthHead.Style.Font.Bold = true;
+
+                    var eleventhHead = worksheet.Cell(4, 11);
+                    eleventhHead.Value = "Early";
+                    eleventhHead.Style.Font.Bold = true;
+
+                    var twelvethHead = worksheet.Cell(4, 12);
+                    twelvethHead.Value = "Worked Hour";
+                    twelvethHead.Style.Font.Bold = true;
+
+                    var thirteenthHead = worksheet.Cell(4, 13);
+                    thirteenthHead.Value = "Req Hours";
+                    thirteenthHead.Style.Font.Bold = true;
+
+                    var forteenthHead = worksheet.Cell(4, 14);
+                    forteenthHead.Value = "Missed Hours";
+                    forteenthHead.Style.Font.Bold = true;
+
+                    var fifteenthHead = worksheet.Cell(4, 15);
+                    fifteenthHead.Value = "Extra Hours";
+                    fifteenthHead.Style.Font.Bold = true;
+
+                    var sixteenthHead = worksheet.Cell(4, 16);
+                    sixteenthHead.Value = "Schedule";
+                    sixteenthHead.Style.Font.Bold = true;
+
+                    var seventeenthHead = worksheet.Cell(4, 17);
+                    seventeenthHead.Value = "Comments";
+                    seventeenthHead.Style.Font.Bold = true;
+
+                    var eightteenthHead = worksheet.Cell(4, 18);
+                    eightteenthHead.Value = "Site";
+                    eightteenthHead.Style.Font.Bold = true;
+
                     try
                     {
                         int rowIndex = 5;
                         foreach (DataRow row in dt.Rows)
                         {
-                            //Here work
                             for (int i = 0; i < 18; i++)
                             {
                                 if (dt.Columns[i].ColumnName != "Column1")
@@ -845,15 +978,52 @@ namespace TAMSR2.Reports
                 }
                 else if (ReportTitle.Trim() == "Early Out Report" || ReportTitle.Trim() == "الخروج المبكر")
                 {
-                    var firstHead = worksheet.Cell(4, 1).Value = "BU";
-                    var secondHead = worksheet.Cell(4, 2).Value = "Department";
-                    var thirdHead = worksheet.Cell(4, 3).Value = "Section";
-                    var forthHead = worksheet.Cell(4, 4).Value = "Number";
-                    var fifthHead = worksheet.Cell(4, 5).Value = "Name";
-                    var sixthHead = worksheet.Cell(4, 6).Value = "Date";
-                    var seventhHead = worksheet.Cell(4, 7).Value = "Time Out";
-                    var eighthHead = worksheet.Cell(4, 8).Value = "Early Out";
-                    var ninethHead = worksheet.Cell(4, 9).Value = "Schedule";
+                    //var firstHead = worksheet.Cell(4, 1).Value = "BU";
+                    //var secondHead = worksheet.Cell(4, 2).Value = "Department";
+                    //var thirdHead = worksheet.Cell(4, 3).Value = "Section";
+                    //var forthHead = worksheet.Cell(4, 4).Value = "Number";
+                    //var fifthHead = worksheet.Cell(4, 5).Value = "Name";
+                    //var sixthHead = worksheet.Cell(4, 6).Value = "Date";
+                    //var seventhHead = worksheet.Cell(4, 7).Value = "Time Out";
+                    //var eighthHead = worksheet.Cell(4, 8).Value = "Early Out";
+                    //var ninethHead = worksheet.Cell(4, 9).Value = "Schedule";
+                    var firstHead = worksheet.Cell(4, 1);
+                    firstHead.Value = "BU";
+                    firstHead.Style.Font.Bold = true;
+
+                    var secondHead = worksheet.Cell(4, 2);
+                    secondHead.Value = "Department";
+                    secondHead.Style.Font.Bold = true;
+
+                    var thirdHead = worksheet.Cell(4, 3);
+                    thirdHead.Value = "Section";
+                    thirdHead.Style.Font.Bold = true;
+
+                    // Continue the same pattern for the remaining cells
+                    var forthHead = worksheet.Cell(4, 4);
+                    forthHead.Value = "Number";
+                    forthHead.Style.Font.Bold = true;
+
+                    var fifthHead = worksheet.Cell(4, 5);
+                    fifthHead.Value = "Name";
+                    fifthHead.Style.Font.Bold = true;
+
+                    var sixthHead = worksheet.Cell(4, 6);
+                    sixthHead.Value = "Date";
+                    sixthHead.Style.Font.Bold = true;
+
+                    var seventhHead = worksheet.Cell(4, 7);
+                    seventhHead.Value = "Time Out";
+                    seventhHead.Style.Font.Bold = true;
+
+                    var eighthHead = worksheet.Cell(4, 8);
+                    eighthHead.Value = "Early Out";
+                    eighthHead.Style.Font.Bold = true;
+
+                    var ninethHead = worksheet.Cell(4, 9);
+                    ninethHead.Value = "Schedule";
+                    ninethHead.Style.Font.Bold = true;
+
                     try
                     {
                         int rowIndex = 5;
@@ -1377,6 +1547,22 @@ namespace TAMSR2.Reports
                     Response.End();
                 }
             }
+        }
+        // Function to format the date value
+        private string FormatDate(string dateValue)
+        {
+            string[] parts = dateValue.Split('-');
+
+            if (parts.Length == 3)
+            {
+                int day = int.Parse(parts[0]);
+                int month = int.Parse(parts[1]);
+                int year = int.Parse(parts[2]);
+
+                return $"{day:00}-{month:00}-{year:0000}";
+            }
+
+            return dateValue;
         }
         //private string ExportExcel(DataTable table)
         //{
